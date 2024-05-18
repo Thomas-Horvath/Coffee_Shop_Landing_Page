@@ -5,7 +5,7 @@
 ## Megvalósított funkciók és fehasznált technológiák:
 1. reszponzív design
 2. akadálymentes oldal
-3. 
+3. mobile-first tervezés
 
 #### technológiák: 
 1. HTML 

@@ -4,19 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/base.css">
-    
-    <title>Thomas Coffee Corner</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+
+    <title>Thomas Coffee Corner - Minden ami kávé!</title>
 </head>
 
 <body>
+    <!-- ----- Global header ----- -->
+    <section class="global-header">
+        <div class="global-header-wrapper">
+            <p>Tata, Szabadság tér 6.</p>
+            <ul class="global-header-right">
+                <li><a class="global-header-right-link" href="#">Tel.: +36 34 123-4567</a></li>
+                <li><a class="global-header-right-link" href="#">Asztalfoglalás</a></li>
+            </ul>
+        </div>
+    </section>
 
 
+
+    <header class="header">
+        <div class="menu-wrapper">
+            <a class="logo" href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-item active-menu" href="#">Főoldal</a></li>
+                    <li><a class="nav-item" href="#about">Rólunk</a></li>
+                    <li class="dropdown">
+                        <div class="wrapper">
+                            <buttom class="nav-item">Termékeink</buttom>
+                            <ul class="products-sublist">
+                                <li class="sublist-items"><a href="./products.html">Kávék</a></li>
+                                <li class="sublist-items">Sütik</li>
+                                <li class="sublist-items">Üditők</li>
+                                <li class="sublist-items">Alkoholok</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-item" href="#video">Események</a></li>
+                    <li><a class="nav-item" href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="hamburger-btn">
+                <span class="hamburger-btn-lines"></span>
+            </div>
+
+        </div>
+    </header>
 
 
     <script src="./scripts/main.js"></script>

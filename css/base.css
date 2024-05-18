@@ -1,0 +1,68 @@
+/* ----- GOOGLE FONTS ----- */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-italic";
+    src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+
+
+
+/* ----- VARIABLES-----  */
+:root {
+    --primary-color: #a98b6f;
+    --secondary-color: #513d2a;
+    --white-smoke: #f7f5f2;
+    --white: #ffffff;
+    --white-variant-1: #eeeeee;
+    --black: #000000;
+    --black-variant-1: #111111;
+    --black-variant-2: #222222;
+    --btn-black-opacity: rgba(0, 0, 0, .5);
+    --btn-brown-opacity: rgba(169, 139, 111, .8);
+    --primary-font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+/* ----- CSS RESET -----  */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* ----- general styles -----  */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    min-width: 350px;
+    background: var(--white-smoke);
+    font-family: var(--primary-font-family);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
