@@ -16,6 +16,7 @@
 /* ----- VARIABLES-----  */
 :root {
     --primary-color: #a98b6f;
+    --primary-color-variant-1: #75563a;
     --secondary-color: #513d2a;
     --white-smoke: #f7f5f2;
     --white: #ffffff;
@@ -49,9 +50,10 @@ html {
 }
 
 body {
-    min-width: 350px;
+    min-width: 330px;
     background: var(--white-smoke);
     font-family: var(--primary-font-family);
+    height: 500vh;
 }
 
 a {

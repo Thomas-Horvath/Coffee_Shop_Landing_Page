@@ -10,15 +10,14 @@
 .header {
     height: 4.5rem;
     width: 100%;
-    background: var(--white-variable-1);
+    background: var(--white-variant-1);
     padding: 0 2rem;
     position: sticky;
-    top: -1px;
+    top: 0;
+    left: 0;
     z-index: 2;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    border-bottom: 2px solid var(--primary-color);
-    /* border-top: 2px solid #a98b6f; */
-
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .menu-wrapper {
@@ -49,56 +48,186 @@
 
 
 /* nav */
-.nav, .search {
-  display: none;
-}
-
-
 
 
 
 /* hamburger menu icon */
 .hamburger-btn {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 100%;
+    padding: 1rem 0 1rem 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    cursor: pointer;
-
-}
-
-.hamburger-btn-lines {
-    display: inline-block;
-    background: var(--black-variant-1);
-    width: 100%;
-    height: 4px;
+    justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 
-.hamburger-btn-lines::after ,.hamburger-btn-lines::before {
-    position: absolute;
+.line,
+.line::after,
+.line::before {
+    display: block;
     background: var(--black-variant-1);
-    width: 100%;
-    height: 4px;
+    width: 2rem;
+    height: .25rem;
+    position: absolute;
     content: "";
-    transition: .3s linear;
 }
 
-.hamburger-btn-lines::before {
+.line::before {
+    top: -10px;
+    transition: .3s ease;
+}
+
+.line::after {
+    top: 10px;
     right: 0;
-    top: -8px;
-}
-.hamburger-btn-lines::after {
-    left: 0;
-    top: 8px;
+    transition: .3s ease;
 }
 
-.hamburger-btn:hover .hamburger-btn-lines::after,
-.hamburger-btn:hover .hamburger-btn-lines::before {
+
+/* hamburger icon hover */
+.hamburger-btn:hover .line::after {
+    width: 60%;
+}
+
+.hamburger-btn:hover .line::before {
     width: 60%;
 }
 
 
 
 
+/* close icon */
+.hamburger-btn.active-hamburger .line {
+    background-color: transparent;
+}
 
+.hamburger-btn.active-hamburger .line::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 100%;
+}
+
+.hamburger-btn.active-hamburger .line::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 100%;
+}
+
+
+
+/* close icon hover */
+.hamburger-btn.active-hamburger:hover .line::after {
+    top: 0;
+    transform: rotate(45deg) scale(1.2);
+    width: 100%;
+}
+
+.hamburger-btn.active-hamburger:hover .line::before {
+    top: 0;
+    transform: rotate(-45deg) scale(1.2);
+    width: 100%;
+}
+
+
+/* navigation menu */
+.nav {
+    position: fixed;
+    top: 4.5rem;
+    right: -100%;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 4.5rem);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-variant-1);
+    border-bottom: 2px solid var(--primary-color);
+    transition: all .3s ease-in-out;
+}
+
+.nav-active {
+    right: 0;
+    overflow-x: auto;
+    height: auto;
+}
+
+.nav-list {
+    width: 100%;
+}
+
+.nav-item,
+.sublist-items {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.sublist-items {
+    padding-left: 3rem;
+}
+
+.dropdown-arrow-icon {
+    font-size: 1.2rem;
+}
+
+.active-menu,
+.nav-item:not(.dropdown-btn):hover,
+.sublist-items:hover {
+    background-color: var(--primary-color);
+    color: var(--white-smoke);
+}
+
+
+
+/* search form */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--white);
+    margin: 1rem 0;
+}
+
+.search-input {
+    height: 2rem;
+    border: none;
+    background: transparent;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+.search-input:focus {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    font-family: var(--primary-font-family);
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+
+.search-submit-btn {
+    border: none;
+    background: var(--white);
+}
+
+.search i {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
