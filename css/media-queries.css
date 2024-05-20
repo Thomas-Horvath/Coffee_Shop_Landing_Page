@@ -1,12 +1,29 @@
 /* -----small devices ----- */
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    .banner p {
+        max-width: 600px;
+        font-size: 1.4rem;
+    }
+    .welcome-card {
+        width: 25rem;
+    }
+}
 
 
 
 
 /* -----medium devices ----- */
 @media screen and (min-width: 768px) {
-  
+    .banner h1 {
+        font-size: 2.6rem;
+    }
+    .banner h1 span { 
+        font-size: 5.6rem;
+    }
+    .banner p {
+        max-width: 900px;
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -113,6 +130,7 @@
         display: none;
         flex-direction: column;
         background: var(--primary-color);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .sublist-items {
@@ -140,8 +158,11 @@
     .dropdown-btn {
         gap: .5rem;
     }
-
-
+    
+    .dropdown:hover .dropdown-arrow-icon {
+        transform: rotate(180deg);
+    }
+   
 
 
     /* search form */
