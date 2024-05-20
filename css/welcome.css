@@ -1,0 +1,64 @@
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 .5rem;
+    gap: 3rem;
+    height: auto;
+    margin-top: -10rem;
+    padding-top: 6rem;
+}
+
+.welcome-card {
+    background-color: var(--main-white);
+    width: 20rem;
+    height: 14rem;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, .15);
+    outline: 8px solid var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color:var(--white-smoke);
+
+    background-color: var(primary-color);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.8) ;
+}
+
+
+
+.welcome-card h3 {
+    font-size: 1.6rem;
+    text-shadow: 1px 1px var(--black);
+    margin-bottom: 1rem;
+}
+
+.history {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.brewing {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.health {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.btn-welcome {
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

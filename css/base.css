@@ -20,7 +20,7 @@
     --secondary-color: #513d2a;
     --white-smoke: #f7f5f2;
     --white: #ffffff;
-    --white-variant-1: #eeeeee;
+    --white-variant-1: #eee;
     --black: #000000;
     --black-variant-1: #111111;
     --black-variant-2: #222222;
@@ -50,10 +50,9 @@ html {
 }
 
 body {
-    min-width: 330px;
+    min-width: 350px;
     background: var(--white-smoke);
     font-family: var(--primary-font-family);
-    height: 500vh;
 }
 
 a {
@@ -67,4 +66,77 @@ li {
 
 img {
     width: 100%;
+}
+
+
+
+/*  general buttons styles */
+.btn {
+    outline: 2px solid var(--primary-color);
+    padding: .6rem 3rem;
+    font-size: 1.5rem;
+    color: var(--white-variant-1);
+    font-weight: 600;
+    background: rgba(0, 0, 0, .5);
+    letter-spacing: .2rem;
+    display: flex;
+    align-items: center;
+    transition: background .3s ease;
+}
+
+.btn:hover {
+    background: var(--btn-brown-opacity);
+}
+
+.btn:active {
+    transform: scale(.97);
+}
+
+
+
+
+
+
+/* general section title */
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+
+.section-title h2 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section-title::after,
+.section-title::before {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    content: "";
+    height: 5px;
+    margin: 2rem;
+    width: 50px;
+}
+
+.section-title img {
+    width: 3.4rem;
+}
+
+
+
+
+
+
+
+
+
+.about, .contact, .products{
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 5rem;
 }
