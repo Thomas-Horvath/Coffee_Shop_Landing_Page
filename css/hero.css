@@ -1,0 +1,90 @@
+.hero {
+    padding-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.hero-main-title {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: var(--title-font-family);
+    text-shadow: 2px 2px 2px var(--secondary-color);
+    padding-bottom: 3rem;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2rem 0;
+}
+
+.hero-left {
+    width: 100%;
+    height: 450px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.hero-left-content {
+    width: 700px;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.img-container {
+    background: url("../assets/img/hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-right {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--white-variant-2);
+}
+
+.hero-right-content {
+    width: 700px;
+    height: 100%;
+    padding: 0 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/img/coffee-beans-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-right-title {
+    font-size: 2.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.hero-right-text {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    background: transparent;
+    color: var(--secondary-color);
+    width: fit-content;
+
+}
+
+.btn-hero:hover {
+    color: var(--white-smoke);
+}

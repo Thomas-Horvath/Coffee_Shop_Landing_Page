@@ -7,6 +7,12 @@
     .welcome-card {
         width: 25rem;
     }
+    .hero-right-title {
+        font-size: 2.5rem;
+    }
+    .hero-right-text {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -23,6 +29,9 @@
     .banner p {
         max-width: 900px;
         font-size: 1.6rem;
+    }
+    .hero-main-title {
+        font-size: 5rem;
     }
 }
 
@@ -144,7 +153,9 @@
         background: var(--white-variant-1);
         color: var(--secondary-color);
     }
-    
+    .sublist-items:hover .nav-item {
+        background: var(--primary-color);
+    }
     .dropdown:hover  .products-sublist {
         display: flex;
     }
@@ -163,6 +174,7 @@
         transform: rotate(180deg);
     }
    
+   
 
 
     /* search form */
@@ -173,6 +185,67 @@
 
     .search-input {
         padding-left: 0;
+    }
+
+
+    /* hero section */
+    .hero-main-title {
+        font-size: 7rem;
+        text-shadow: 2px 5px 2px var(--secondary-color);
+        padding-bottom: 5rem;
+    }
+    .hero-container {
+        flex-direction: row;
+    }
+    .hero-left {
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .hero-right  {
+        width: 50%;
+      
+    }
+    .hero-right-title {
+        font-size: 2.5rem;
+    }
+    .hero-right-text {
+        font-size: 1.1rem;
+    }
+    .hero-right-content {
+          padding: 0  2rem 0 5rem;
+          margin: 0;
+    }
+    .img-container {
+        position: absolute;
+        bottom: -3rem;
+        right: -2rem;
+        margin-left: 5rem;
+    }
+
+
+
+
+
+    /* about page */
+    .about-container {
+        max-width: 1400px;
+        margin:3rem  auto;
+        display: grid;
+   
+        grid-template-areas: 
+        "top  top"
+        "img1  img2 "
+        "bottom bottom";
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+    .top-content, .bottom-content {
+        padding: 0;
+    }
+    .top-content-text , .bottom-content-text {
+        font-size: 1rem;
+        padding:  0 1rem;
+        margin-bottom: 1rem;
     }
 }
 

@@ -1,0 +1,30 @@
+
+.footer {
+    height: 60vh;
+    background: var(--black-variant-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.copyright {
+    height: 6vh;
+    background: var(--black-variant-1);
+    color: var(--white-smoke);
+    text-align: center;
+}
+.subscribe-form {
+    min-height: 20vh;
+    width: 100%;
+    margin: -5rem auto 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../assets/img/subscribe-BG.jpg");
+    background-position: top;
+    background-size: cover;
+    color:var(--white-smoke);
+    z-index: 1;
+    outline: 4px solid var(--white);
+    box-shadow: 5px -5px 20px rgba(0, 0, 0, .5);
+}
+
+

@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/welcome.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/favorites.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/events.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/media-queries.css">
 
@@ -31,7 +34,8 @@
             <p class="link-address"><i class="fa-solid fa-location-dot"></i> Tata, Szabadság tér 6.</p>
             <ul class="global-header-right">
                 <li><a class="link-phone" href="#"><i class="fa-solid fa-phone"></i> +36 34 123-4567</a></li>
-                <li><a class="link-booking" href="#"><i class="fa-regular fa-pen-to-square"></i> Asztalfoglalás</a></li>
+                <li><a class="link-booking" href="#booking"><i class="fa-regular fa-pen-to-square"></i>
+                        Asztalfoglalás</a></li>
             </ul>
         </div>
     </section>
@@ -44,21 +48,21 @@
             <nav class="nav js-nav ">
                 <ul class="nav-list">
                     <li><a class="nav-item js-menu-item active-menu" href="#">Főoldal</a></li>
-                    <li><a class="nav-item js-menu-item" href="#about">Rólunk</a></li>
+                    <li><a class="nav-item js-menu-item" href="./about.html">Rólunk</a></li>
                     <li class="dropdown">
                         <div class="nav-item dropdown-btn js-dropdown-btn">Termékeink
                             <i class="fa-solid fa-caret-down dropdown-arrow-icon"></i>
                         </div>
 
                         <ul class="products-sublist">
-                            <li><a class="sublist-items" href="./products.html">Kávék</a></li>
-                            <li><a class="sublist-items" href="#">Sütik</a></li>
-                            <li><a class="sublist-items" href="#">Üditők</a></li>
-                            <li><a class="sublist-items" href="#">Alkoholok</a></li>
+                            <li><a class="sublist-items js-menu-item" href="./products.html">Kávék</a></li>
+                            <li><a class="sublist-items js-menu-item" href="#">Sütik</a></li>
+                            <li><a class="sublist-items js-menu-item" href="#">Üditők</a></li>
+                            <li><a class="sublist-items js-menu-item" href="#">Alkoholok</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-item js-menu-item" href="#video">Események</a></li>
-                    <li><a class="nav-item js-menu-item" href="#contact">Kapcsolat</a></li>
+                    <li><a class="nav-item js-menu-item" href="#events">Események</a></li>
+                    <li><a class="nav-item js-menu-item" href="./contact.html">Kapcsolat</a></li>
                 </ul>
                 <form class="search" action="#" method="get">
                     <input class="search-input" type="text" name="search" placeholder="Termék keresése..">
@@ -84,7 +88,7 @@
         <section class="banner">
             <h1 class="main-title">A <span>Kávé</span> az Ébredés Varázslata!</h1>
             <p>Üdvözlünk a Thomas Coffee Corner oldalán!</p>
-            <a href="" class="btn btn-banner">Asztalfoglalás</a>
+            <a href="#booking" class="btn btn-banner">Asztalfoglalás</a>
         </section>
 
 
@@ -94,56 +98,204 @@
         <section class="welcome">
             <article class="welcome-card history">
                 <h3>A kávé története</h3>
-                <a class="btn btn-welcome">Megnézem</a>
+                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
             </article>
 
             <article class="welcome-card brewing">
                 <h3>A kávéfőzés módjai </h3>
-                <a class="btn btn-welcome">Megnézem</a>
+                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
             </article>
 
             <article class="welcome-card health">
                 <h3>A kávé és az egészség</h3>
-                <a class="btn btn-welcome">Megnézem</a>
+                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
             </article>
 
         </section>
 
 
         <!-- about section -->
-        <section class="about" id="about">
-            <div class="section-title">
-                <img src="./assets/img/coffee-beans.png" alt="Kávébab">
-                <h2>Rólunk</h2>
+        <section class="hero">
+            <h2 class="hero-main-title">Thomas Coffee Corner</h2>
+
             </div>
-            <div class="about-container">
-                <img class="about-img-1" src="./assets/img/about-1.png" alt="">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-left-content">
+                        <div class="img-container"></div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-right-content">
+                        <h2 class="hero-right-title">A történetünk</h2>
+                        <p class="hero-right-text">Kávézónk 1986 óta várja vendégeit a város szívében, és azóta is
+                            töretlen
+                            lelkesedéssel szolgáljuk ki a kávé szerelmeseit.</p>
+                        <p class="hero-right-text">A Thomas Coffee Corner nemcsak egy kávézó, hanem egy
+                            közösségi tér is..</p>
+                        <a href="./about.html" class="btn btn-hero">Tovább</a>
+                    </div>
+                </div>
             </div>
 
         </section>
 
 
 
+
+
+
+
+
+
+
+
+        <!-- favorites section-->
+        <section class="favorites" id="favorites">
+            <div class="section-title">
+                <div class="title-container">
+                    <h2>Kedvenceink</h2>
+                    <img src="./assets/img/coffee-beans.png" alt="Kávébab">
+                </div>
+            </div>
+
+
+            <article class="tips-cards">
+                <article class="tips-card">
+                    <img src="./assets/products_img/strawberry_coffee.jpg" alt="hutés" />
+                    <div class="content-wrapper">
+                        <h3>Epres kávékoktél</h3>
+                        <div class="rate-container">
+                            <div class="rate-satrs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="rate">4.6</p>
+                        </div>
+                        <p class="price">890 Ft</p>
+                    </div>
+                </article>
+
+                <article class="tips-card big-card">
+                    <img src="./assets/products_img/orange_expresso.jpg" alt="foző" />
+                    <div class="content-wrapper">
+                        <h3>Narancsos-tonikos eszpresszó</h3>
+                        <div class="rate-container">
+                            <div class="rate-satrs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="rate">4.6</p>
+                        </div>
+                        <p class="price">600 Ft</p>
+                    </div>
+
+                </article>
+
+                <article class="tips-card">
+                    <img src="./assets/products_img/irish_coffee.jpg" alt="sörkémia" />
+                    <div class="content-wrapper">
+                        <h3>Ír kávé</h3>
+                        <div class="rate-container">
+                            <div class="rate-satrs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="rate">4.6</p>
+                        </div>
+                        <p class="price">380 FT</p>
+                    </div>
+
+                </article>
+            </article>
+
+        </section>
 
 
 
         <!-- booking section -->
-        <section class="booking">
+        <section class="booking" id="booking">
+            <div class="booking-container">
+                <h2>Foglaljon asztalt</h2>
+                <form action="#" class="booking-form">
+                    <label for=""> Válaszzon dátumot
+                        <input type="date" name="date" id="">
+                    </label>
 
-        </section>
+                    <label for=""> Válaszzon időpontot
+                        <input type="time" name="hour" id="">
+                    </label>
 
+                    <label for=""> Vendégek száma
+                        <input type="number" name="guests" id="" min="1" max="10">
+                    </label>
+                    <label for=""> Teljes név
+                        <input type="text" name="name" id="">
+                    </label>
+                    <label for=""> Telefonszám
+                        <input type="tel" name="phone" id="">
+                    </label>
+                    <label for=""> Email cím
+                        <input type="email" name="email" id="">
+                    </label>
 
+                    <button type="submit">Foglalás</button>
+                </form>
 
-
-
-        <!-- the best products  section-->
-        <section class="products" id="products">
-            <div class="section-title">
-                <img src="./assets/img/coffee-beans.png" alt="Kávébab">
-                <h2>Vendégek kedvencei</h2>
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+        <section class="events" id="events">
+            <div class="event-content">
+                <div class="section-title">
+                    <div class="title-container">
+                        <h2>Eseményeink</h2>
+                        <img src="./assets/img/coffee-beans.png" alt="Kávébab">
+                    </div>
+                </div>
+                <div class="events-container">
+                    <p>Májustól októberig minden hétvéhgén pénteken és szombaton élőzenés rendezvényekkel várjuk kedves
+                        vendégeinket</p>
+                    <h2>Közelgő rendezvények:</h2>
+
+                    <ul>
+                        <li>Május 12 - Kowalsky</li>
+                        <li>Május 13 - Macskajajj</li>
+                        <li>Június 12 - Kowalsky</li>
+                        <li>Július 21 - Macskajajj</li>
+                        <li>Június 12 - Kowalsky</li>
+                        <li>Július 21 - Macskajajj</li>
+                    </ul>
+                </div>
+            </div>
+            <video width="100%" autoplay loop muted>
+                <source src="./assets/video/1107158_1080p_4k_2k_1920x1080.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+        </section>
+
+
+        <!-- gallery section -->
+        <section class="gallery">
+            <h2>#Életképek</h2>
+        </section>
 
 
 
