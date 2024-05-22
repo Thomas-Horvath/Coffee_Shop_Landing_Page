@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./assets/icons/favicon-logo.png" type="image/x-icon">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -227,24 +228,24 @@
             <div class="booking-container">
                 <h2>Foglaljon asztalt</h2>
                 <form action="#" class="booking-form">
-                    <label for=""> Válaszzon dátumot
+                    <label > Válaszzon dátumot
                         <input type="date" name="date" id="">
                     </label>
 
-                    <label for=""> Válaszzon időpontot
+                    <label > Válaszzon időpontot
                         <input type="time" name="hour" id="">
                     </label>
 
-                    <label for=""> Vendégek száma
+                    <label> Vendégek száma
                         <input type="number" name="guests" id="" min="1" max="10">
                     </label>
-                    <label for=""> Teljes név
+                    <label> Teljes név
                         <input type="text" name="name" id="">
                     </label>
-                    <label for=""> Telefonszám
+                    <label> Telefonszám
                         <input type="tel" name="phone" id="">
                     </label>
-                    <label for=""> Email cím
+                    <label> Email cím
                         <input type="email" name="email" id="">
                     </label>
 
@@ -307,30 +308,77 @@
     <!-- Footer section -->
 
     <footer class="footer">
-        <div class="subscribe-form">
-            <h2>Íratkozz fel hírlevelünkre!</h2>
-            <form action="#" method="post">
-                <label>
-                    Neved
-                    <input type="text" name="name" id="name">
-                </label>
-                <label>
-                    Emai címed
-                    <input type="email" name="email" id="email">
-                </label>
-                <input type="submit" class="btn" id="submit">
-                <input type="checkbox" name="check" id="check">
-                <p>Elfogadod az adatkezelési tájékoztatót!</p>
-            </form>
-        </div>
-        <div class="content">
+        <div class="footer-container">
+
+            <div class="footer-links">
+                <a href="">Adatvdelmi tájékoztató</a>
+                <a href="">Impressum</a>
+                <a href="">Cookiek kezelése</a>
+                <a href="">ÁSZF</a>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+
+            <div class="opening-hours">
+            
+                    <h4 class="opening-hours-title">NYITVATARTÁS</h4>
+                
+                    <p><strong>Hétfő:</strong>Zárva</p>
+                    <p><strong>Kedd:</strong>Zárva</p>
+                    <p><strong>Szerda:</strong>09:00 - 22:00</p>
+                    <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
+                    <p><strong>Péntek:</strong>09:00 - 22:00</p>
+                    <p><strong>Szombat:</strong>09:00 - 22:00</p>
+                    <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
+           
+
+            </div>
+
+
+
+
+
+            <div class="subscribe-form-container">
+                <h2>Íratkozz fel hírlevelünkre!</h2>
+                <form action="#" method="post" class="subscribe-form">
+                    <label>
+                        Neved
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label>
+                        Emai címed
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <input type="submit" class="btn" id="submit">
+                    <input type="checkbox" name="check" id="check">
+                    <p>Elfogadod az adatkezelési tájékoztatót!</p>
+                </form>
+            </div>
+
+
 
 
         </div>
+
+
+
         <div class="copyright">
             <p>Copyright &copy; 2024 Minden jog fentartva! </p>
         </div>
+
+
     </footer>
+
+
+    <div class="cookeis">
+        <p>Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk
+            használatával ön a tájékoztatásunkat tudomásul veszi.</p> <a href="">Adatkezelési tájékoztató</a>
+        <button class="btn">Elfogadom</button>
+    </div>
 
     <script src="./scripts/main.js"></script>
 </body>

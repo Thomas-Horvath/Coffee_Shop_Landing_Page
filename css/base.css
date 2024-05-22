@@ -154,3 +154,8 @@ img {
     min-height: 100vh;
     padding-top: 5rem;
 } 
+
+iframe {
+outline: none;
+
+}

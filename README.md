@@ -1,6 +1,6 @@
 # Thomas Coffee Corner - fiktív kávézó weboldala
 
-## Az oldalt a kövezkező linken tekintheted meg: [Thomsa Coffee Corner](https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/)
+## Az oldalt a kövezkező linken tekintheted meg: [Thomas Coffee Corner](https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/)
 
 ## Megvalósított funkciók és fehasznált technológiák:
 1. reszponzív design
