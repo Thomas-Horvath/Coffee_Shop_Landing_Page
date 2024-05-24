@@ -3,59 +3,75 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: auto;
-    padding: 0 .5rem;
-    gap: 3rem;
+    width: 100%;
     height: auto;
     margin-top: -10rem;
-    /* margin-bottom: 10rem; */
     padding-top: 6rem;
 }
 
 .welcome-card {
-    background-color: var(--main-white);
-    width: 20rem;
-    height: 14rem;
-    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, .15);
-    outline: 4px solid var(--white);
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color:var(--white-smoke);
-
-    background-color: var(primary-color);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.8) ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.icon {
+    font-size: 3rem;
+}
 
 
 .welcome-card h3 {
     font-size: 1.6rem;
-    text-shadow: 1px 1px var(--black);
+ 
     margin-bottom: 1rem;
 }
 
 .history {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-1.jpg");
+    /* background: var(--primary-color); */
+    background: #7f7064;
+    color: var(--black-variant-2);
+   
+}
+
+.history:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url("../assets/img/welcome-card-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    color: var(--white-smoke);
 }
 
 .brewing {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-2.jpg");
+    color: var(--secondary-color);
+    background: var(--white-variant-2);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.brewing:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url("../assets/img/welcome-card-2.jpg");
+    color: var(--white-smoke);
+}
+
 .health {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/welcome-card-3.jpg");
+    color: var(--black-variant-2);
+    background: var(--primary-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.health:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .54), rgba(0, 0, 0, .7)), url("../assets/img/welcome-card-3.jpg");
+    color: var(--white-smoke);
+
 }
 
 .btn-welcome {

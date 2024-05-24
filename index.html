@@ -97,20 +97,22 @@
 
         <!-- welcome section -->
         <section class="welcome">
-            <article class="welcome-card history">
+            <a href="./history.html" class="welcome-card history">
+                <i class="fa-solid fa-clock-rotate-left icon"></i>
                 <h3>A kávé története</h3>
-                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
-            </article>
+            </a>
 
-            <article class="welcome-card brewing">
+            <a href="./history.html" class="welcome-card brewing">
+                <i class="fa-solid fa-mug-hot icon"></i>
                 <h3>A kávéfőzés módjai </h3>
-                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
-            </article>
+              
+            </a>
 
-            <article class="welcome-card health">
+            <a href="./history.html" class="welcome-card health">
+                <i class="fa-solid fa-heart-pulse icon"></i>
                 <h3>A kávé és az egészség</h3>
-                <a href="./history.html" class="btn btn-welcome">Megnézem</a>
-            </article>
+              
+            </a>
 
         </section>
 
@@ -161,8 +163,8 @@
             </div>
 
 
-            <article class="tips-cards">
-                <article class="tips-card">
+            <article class="favorites-cards">
+                <article class="favorites-card">
                     <img src="./assets/products_img/strawberry_coffee.jpg" alt="hutés" />
                     <div class="content-wrapper">
                         <h3>Epres kávékoktél</h3>
@@ -180,7 +182,7 @@
                     </div>
                 </article>
 
-                <article class="tips-card big-card">
+                <article class="favorites-card big-card">
                     <img src="./assets/products_img/orange_expresso.jpg" alt="foző" />
                     <div class="content-wrapper">
                         <h3>Narancsos-tonikos eszpresszó</h3>
@@ -199,7 +201,7 @@
 
                 </article>
 
-                <article class="tips-card">
+                <article class="favorites-card">
                     <img src="./assets/products_img/irish_coffee.jpg" alt="sörkémia" />
                     <div class="content-wrapper">
                         <h3>Ír kávé</h3>
@@ -229,24 +231,24 @@
                 <h2>Foglaljon asztalt</h2>
                 <form action="#" class="booking-form">
                     <label > Válaszzon dátumot
-                        <input type="date" name="date" id="">
+                        <input type="date" name="date" >
                     </label>
 
                     <label > Válaszzon időpontot
-                        <input type="time" name="hour" id="">
+                        <input type="time" name="hour" >
                     </label>
 
                     <label> Vendégek száma
-                        <input type="number" name="guests" id="" min="1" max="10">
+                        <input type="number" name="guests" min="1" max="10">
                     </label>
                     <label> Teljes név
-                        <input type="text" name="name" id="">
+                        <input type="text" name="name" >
                     </label>
                     <label> Telefonszám
-                        <input type="tel" name="phone" id="">
+                        <input type="tel" name="phone" >
                     </label>
                     <label> Email cím
-                        <input type="email" name="email" id="">
+                        <input type="email" name="email">
                     </label>
 
                     <button type="submit">Foglalás</button>
@@ -298,6 +300,24 @@
             <h2>#Életképek</h2>
         </section>
 
+        <article class="subscribe">
+            <div class="subscribe-form-container">
+                <h2>Íratkozz fel hírlevelünkre!</h2>
+                <form action="#" method="post" class="subscribe-form">
+                    <label>
+                        Neved
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label>
+                        Emai címed
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <input type="submit" class="btn" id="submit">
+                    <input type="checkbox" name="check" id="check">
+                    <p>Elfogadod az adatkezelési tájékoztatót!</p>
+                </form>
+            </div>
+        </article>
 
 
 
@@ -342,22 +362,7 @@
 
 
 
-            <div class="subscribe-form-container">
-                <h2>Íratkozz fel hírlevelünkre!</h2>
-                <form action="#" method="post" class="subscribe-form">
-                    <label>
-                        Neved
-                        <input type="text" name="name" id="name">
-                    </label>
-                    <label>
-                        Emai címed
-                        <input type="email" name="email" id="email">
-                    </label>
-                    <input type="submit" class="btn" id="submit">
-                    <input type="checkbox" name="check" id="check">
-                    <p>Elfogadod az adatkezelési tájékoztatót!</p>
-                </form>
-            </div>
+           
 
 
 
@@ -374,10 +379,11 @@
     </footer>
 
 
-    <div class="cookeis">
+    <div class="cookies">
         <p>Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk
-            használatával ön a tájékoztatásunkat tudomásul veszi.</p> <a href="">Adatkezelési tájékoztató</a>
-        <button class="btn">Elfogadom</button>
+            használatával ön a tájékoztatásunkat tudomásul veszi.</p>
+             <a class="cookies-link" href="#">Adatkezelési tájékoztató</a>
+        <button class="btn cookies-btn">Elfogadom</button>
     </div>
 
     <script src="./scripts/main.js"></script>

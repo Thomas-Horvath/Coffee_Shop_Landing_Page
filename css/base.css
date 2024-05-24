@@ -21,7 +21,7 @@
 :root {
     --primary-color: #a98b6f;
     --primary-color-variant-1: #75563a;
-    --secondary-color: #513d2a;
+    --secondary-color: #403122;
     --white-smoke: #f7f5f2;
     --white: #ffffff;
     --white-variant-1: #eee;
@@ -55,12 +55,14 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 16px;
+    user-select: none;
 }
 
 body {
     min-width: 350px;
     background: var(--white-smoke);
     font-family: var(--primary-font-family);
+    position: relative;
 }
 
 a {

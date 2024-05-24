@@ -1,6 +1,12 @@
 const hamburgerBtn = document.querySelector('.js-hamburger-btn');
 const nav = document.querySelector(".js-nav");
 const menuItems = document.querySelectorAll('.js-menu-item');
+const cookies = document.querySelector('.cookies');
+const cookiesBtn = document.querySelector('.cookies-btn');
+
+
+
+
 
 hamburgerBtn.addEventListener('click', () => {
     nav.classList.toggle("nav-active");
@@ -35,4 +41,15 @@ input.addEventListener("submit", (e) => {
     }
 
 
+});
+
+
+
+
+setTimeout(() => {
+cookies.classList.add("cookie-active")
+}, 3000);
+
+cookiesBtn.addEventListener("click", () => {
+    cookies.classList.remove("cookie-active");
 });
