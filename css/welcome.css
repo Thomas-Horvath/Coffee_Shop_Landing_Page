@@ -34,8 +34,8 @@
 }
 
 .history {
-    /* background: var(--primary-color); */
-    background: #7f7064;
+    background: var(--primary-color);
+  
     color: var(--black-variant-2);
    
 }

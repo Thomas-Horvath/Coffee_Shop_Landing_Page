@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/favorites.css">
     <link rel="stylesheet" href="./css/booking.css">
     <link rel="stylesheet" href="./css/events.css">
+    <link rel="stylesheet" href="./css/subscribe.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/media-queries.css">
 
@@ -66,7 +67,8 @@
                     <li><a class="nav-item js-menu-item" href="./contact.html">Kapcsolat</a></li>
                 </ul>
                 <form class="search" action="#" method="get">
-                    <input class="search-input" type="text" name="search" placeholder="Termék keresése..">
+                    <input class="search-input" type="text" name="search" placeholder="Termék keresése.."
+                        autocomplete="off">
                     <button class="search-submit-btn" type="submit"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
@@ -105,19 +107,19 @@
             <a href="./history.html" class="welcome-card brewing">
                 <i class="fa-solid fa-mug-hot icon"></i>
                 <h3>A kávéfőzés módjai </h3>
-              
+
             </a>
 
             <a href="./history.html" class="welcome-card health">
                 <i class="fa-solid fa-heart-pulse icon"></i>
                 <h3>A kávé és az egészség</h3>
-              
+
             </a>
 
         </section>
 
 
-        <!-- about section -->
+        <!-- hero section -->
         <section class="hero">
             <h2 class="hero-main-title">Thomas Coffee Corner</h2>
 
@@ -230,25 +232,25 @@
             <div class="booking-container">
                 <h2>Foglaljon asztalt</h2>
                 <form action="#" class="booking-form">
-                    <label > Válaszzon dátumot
-                        <input type="date" name="date" >
+                    <label> Válaszzon dátumot
+                        <input type="date" name="date" autocomplete="off">
                     </label>
 
-                    <label > Válaszzon időpontot
-                        <input type="time" name="hour" >
+                    <label> Válaszzon időpontot
+                        <input type="time" name="hour" autocomplete="off">
                     </label>
 
                     <label> Vendégek száma
-                        <input type="number" name="guests" min="1" max="10">
+                        <input type="number" name="guests" min="1" max="10" autocomplete="off">
                     </label>
                     <label> Teljes név
-                        <input type="text" name="name" >
+                        <input type="text" name="name" autocomplete="name">
                     </label>
                     <label> Telefonszám
-                        <input type="tel" name="phone" >
+                        <input type="tel" name="phone" autocomplete="tel">
                     </label>
                     <label> Email cím
-                        <input type="email" name="email">
+                        <input type="email" name="email" autocomplete="email">
                     </label>
 
                     <button type="submit">Foglalás</button>
@@ -303,18 +305,26 @@
         <article class="subscribe">
             <div class="subscribe-form-container">
                 <h2>Íratkozz fel hírlevelünkre!</h2>
-                <form action="#" method="post" class="subscribe-form">
-                    <label>
-                        Neved
-                        <input type="text" name="name" id="name">
-                    </label>
-                    <label>
-                        Emai címed
-                        <input type="email" name="email" id="email">
-                    </label>
-                    <input type="submit" class="btn" id="submit">
-                    <input type="checkbox" name="check" id="check">
-                    <p>Elfogadod az adatkezelési tájékoztatót!</p>
+                <form action="#" method="get" class="subscribe-form">
+                    <div class="input-section">
+                        <label>
+                            Neved
+                            <input type="text" name="name" id="name" autocomplete="name">
+                        </label>
+                        <label>
+                            Emai címed
+                            <input type="email" name="email" id="email" autocomplete="email">
+                        </label>
+                    </div>
+                    <div class="button-section">
+                        <div class="policy-section">
+                            <label for="check">
+                                <input type="checkbox" name="check" id="check">
+                                Elfogadod az adatkezelési tájékoztatót!
+                            </label>
+                        </div>
+                        <button type="submit" class="btn subscribe-btn">Küldés</button>
+                    </div>
                 </form>
             </div>
         </article>
@@ -344,17 +354,17 @@
 
 
             <div class="opening-hours">
-            
-                    <h4 class="opening-hours-title">NYITVATARTÁS</h4>
-                
-                    <p><strong>Hétfő:</strong>Zárva</p>
-                    <p><strong>Kedd:</strong>Zárva</p>
-                    <p><strong>Szerda:</strong>09:00 - 22:00</p>
-                    <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
-                    <p><strong>Péntek:</strong>09:00 - 22:00</p>
-                    <p><strong>Szombat:</strong>09:00 - 22:00</p>
-                    <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
-           
+
+                <h4 class="opening-hours-title">NYITVATARTÁS</h4>
+
+                <p><strong>Hétfő:</strong>Zárva</p>
+                <p><strong>Kedd:</strong>Zárva</p>
+                <p><strong>Szerda:</strong>09:00 - 22:00</p>
+                <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
+                <p><strong>Péntek:</strong>09:00 - 22:00</p>
+                <p><strong>Szombat:</strong>09:00 - 22:00</p>
+                <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
+
 
             </div>
 
@@ -362,7 +372,7 @@
 
 
 
-           
+
 
 
 
@@ -382,11 +392,11 @@
     <div class="cookies">
         <p>Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk
             használatával ön a tájékoztatásunkat tudomásul veszi.</p>
-             <a class="cookies-link" href="#">Adatkezelési tájékoztató</a>
+        <a class="cookies-link" href="#">Adatkezelési tájékoztató</a>
         <button class="btn cookies-btn">Elfogadom</button>
     </div>
 
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>

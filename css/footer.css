@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-
+color: var(--white-smoke);
 }
 
 .footer-container {
@@ -13,9 +13,11 @@
     flex-direction: column;
     max-width: 1400px;
     margin: 0 auto;
-
+gap: 1rem;
 }
-
+.footer-links a {
+    color: var(--white-smoke);
+}
 .opening-hours {
     display: flex;
     flex-direction: column;
@@ -33,11 +35,12 @@
     text-align: center;
 }
 
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    color: var(--white-smoke);
-}
+
+
+
+
+
+
 
 .cookies {
     position: sticky;

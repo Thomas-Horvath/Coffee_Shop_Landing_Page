@@ -82,9 +82,10 @@
     background: transparent;
     color: var(--secondary-color);
     width: fit-content;
-
+   outline-color: var(--secondary-color);
 }
 
 .btn-hero:hover {
     color: var(--white-smoke);
+    outline-color: var(--primary-color);
 }
