@@ -15,7 +15,6 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/subscribe.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/media-queries.css">
 
@@ -29,7 +28,8 @@
             <p class="link-address"><i class="fa-solid fa-location-dot"></i> Tata, Szabadság tér 6.</p>
             <ul class="global-header-right">
                 <li><a class="link-phone" href="#"><i class="fa-solid fa-phone"></i> +36 34 123-4567</a></li>
-                <li><a class="link-booking" href="#"><i class="fa-regular fa-pen-to-square"></i> Asztalfoglalás</a></li>
+                <li><a class="link-booking" href="./index.html#booking"><i class="fa-regular fa-pen-to-square"></i>
+                        Asztalfoglalás</a></li>
             </ul>
         </div>
     </section>
@@ -38,11 +38,11 @@
     <!-- ----- Header ----- -->
     <header class="header">
         <div class="menu-wrapper">
-            <a class="logo" href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
+            <a class="logo" href="./index.html"><img src="./assets/img/logo.png" alt="Logo"></a>
             <nav class="nav js-nav ">
                 <ul class="nav-list">
                     <li><a class="nav-item js-menu-item active-menu" href="./index.html">Főoldal</a></li>
-                    <li><a class="nav-item js-menu-item" href="./index.html#about">Rólunk</a></li>
+                    <li><a class="nav-item js-menu-item" href="./about.html">Rólunk</a></li>
                     <li class="dropdown">
                         <div class="nav-item dropdown-btn js-dropdown-btn">Termékeink
                             <i class="fa-solid fa-caret-down dropdown-arrow-icon"></i>
@@ -50,9 +50,9 @@
 
                         <ul class="products-sublist">
                             <li><a class="sublist-items" href="./products.html">Kávék</a></li>
-                            <li><a class="sublist-items" href="#">Sütik</a></li>
-                            <li><a class="sublist-items" href="#">Üditők</a></li>
-                            <li><a class="sublist-items" href="#">Alkoholok</a></li>
+                            <li><a class="sublist-items" href="./products.html">Sütik</a></li>
+                            <li><a class="sublist-items" href="./products.html">Üditők</a></li>
+                            <li><a class="sublist-items" href="./products.html">Alkoholok</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-item js-menu-item" href="./index.html#events">Események</a></li>
@@ -80,33 +80,6 @@
 
 
 
-
-        <article class="subscribe">
-            <div class="subscribe-form-container">
-                <h2>Íratkozz fel hírlevelünkre!</h2>
-                <form action="#" method="get" class="subscribe-form">
-                    <div class="input-section">
-                        <label>
-                            Neved
-                            <input type="text" name="name" id="name" autocomplete="name">
-                        </label>
-                        <label>
-                            Emai címed
-                            <input type="email" name="email" id="email" autocomplete="email">
-                        </label>
-                    </div>
-                    <div class="button-section">
-                        <div class="policy-section">
-                            <label for="check">
-                                <input type="checkbox" name="check" id="check">
-                                Elfogadod az adatkezelési tájékoztatót!
-                            </label>
-                        </div>
-                        <button type="submit" class="btn subscribe-btn">Küldés</button>
-                    </div>
-                </form>
-            </div>
-        </article>
 
 
 
@@ -146,16 +119,6 @@
 
 
             </div>
-
-
-
-
-
-
-
-
-
-
         </div>
 
 

@@ -15,7 +15,6 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/media-queries.css">
@@ -30,7 +29,7 @@
             <p class="link-address"><i class="fa-solid fa-location-dot"></i> Tata, Szabadság tér 6.</p>
             <ul class="global-header-right">
                 <li><a class="link-phone" href="#"><i class="fa-solid fa-phone"></i> +36 34 123-4567</a></li>
-                <li><a class="link-booking" href="#booking"><i class="fa-regular fa-pen-to-square"></i>
+                <li><a class="link-booking" href="./index.html#booking"><i class="fa-regular fa-pen-to-square"></i>
                         Asztalfoglalás</a></li>
             </ul>
         </div>
@@ -40,11 +39,11 @@
     <!-- ----- Header ----- -->
     <header class="header">
         <div class="menu-wrapper">
-            <a class="logo" href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
+            <a class="logo" href="./index.html"><img src="./assets/img/logo.png" alt="Logo"></a>
             <nav class="nav js-nav ">
                 <ul class="nav-list">
                     <li><a class="nav-item js-menu-item active-menu" href="./index.html">Főoldal</a></li>
-                    <li><a class="nav-item js-menu-item" href="#about">Rólunk</a></li>
+                    <li><a class="nav-item js-menu-item" href="./about.html">Rólunk</a></li>
                     <li class="dropdown">
                         <div class="nav-item dropdown-btn js-dropdown-btn">Termékeink
                             <i class="fa-solid fa-caret-down dropdown-arrow-icon"></i>
@@ -52,13 +51,13 @@
 
                         <ul class="products-sublist">
                             <li><a class="sublist-items js-menu-item" href="./products.html">Kávék</a></li>
-                            <li><a class="sublist-items js-menu-item" href="#">Sütik</a></li>
-                            <li><a class="sublist-items js-menu-item" href="#">Üditők</a></li>
-                            <li><a class="sublist-items js-menu-item" href="#">Alkoholok</a></li>
+                            <li><a class="sublist-items js-menu-item" href="./products.html">Sütik</a></li>
+                            <li><a class="sublist-items js-menu-item" href="./products.html">Üditők</a></li>
+                            <li><a class="sublist-items js-menu-item" href="./products.html">Alkoholok</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-item js-menu-item" href="#events">Események</a></li>
-                    <li><a class="nav-item js-menu-item" href="#contact">Kapcsolat</a></li>
+                    <li><a class="nav-item js-menu-item" href="./index.html#events">Események</a></li>
+                    <li><a class="nav-item js-menu-item" href="./index.html#contact">Kapcsolat</a></li>
                 </ul>
                 <form class="search" action="#" method="get">
                     <input class="search-input" type="text" name="search" placeholder="Termék keresése..">
@@ -77,13 +76,6 @@
     <main>
 
 
-
-
-
-        <!-- Banner -->
-        <section class="banner">
-            <a href="./index.html#booking" class="btn btn-banner">Asztalfoglalás</a>
-        </section>
 
 
 
@@ -112,10 +104,10 @@
                         Kínálatunkban megtalálhatók a világ legjobb kávéinak válogatása. Legyen szó eszpresszóról,
                         cappuccinóról, lattéról vagy egy különleges, szezonális kávékülönlegességről, nálunk biztosan
                         megtalálod a kedvencedet.</p>
-                  
+
                 </div>
                 <div class="bottom-content">
-                     <p class="bottom-content-text">Büszkék vagyunk arra, hogy kávéinkat gondosan válogatott, frissen
+                    <p class="bottom-content-text">Büszkék vagyunk arra, hogy kávéinkat gondosan válogatott, frissen
                         pörkölt kávészemekből készítjük. A minőség iránti elkötelezettségünk minden csészében
                         megmutatkozik, hiszen a legjobb kávéélményt szeretnénk nyújtani vendégeinknek. A kávé mellett
                         sütemények, szendvicsek és egyéb finomságok széles választékával várjuk vendégeinket. Minden
@@ -141,37 +133,53 @@
 
 
 
+
+
     </main>
 
 
     <!-- Footer section -->
 
     <footer class="footer">
-        <div class="subscribe-form">
-            <h2>Íratkozz fel hírlevelünkre!</h2>
-            <form action="#" method="post">
-                <label>
-                    Neved
-                    <input type="text" name="name" id="name">
-                </label>
-                <label>
-                    Emai címed
-                    <input type="email" name="email" id="email">
-                </label>
-                <input type="submit" class="btn" id="submit">
-                <input type="checkbox" name="check" id="check">
-                <p>Elfogadod az adatkezelési tájékoztatót!</p>
-            </form>
-        </div>
-        <div class="content">
+        <div class="footer-container">
+
+            <div class="footer-links">
+                <a href="">Adatvdelmi tájékoztató</a>
+                <a href="">Impressum</a>
+                <a href="">Cookiek kezelése</a>
+                <a href="">ÁSZF</a>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
 
 
+            <div class="opening-hours">
+
+                <h4 class="opening-hours-title">NYITVATARTÁS</h4>
+
+                <p><strong>Hétfő:</strong>Zárva</p>
+                <p><strong>Kedd:</strong>Zárva</p>
+                <p><strong>Szerda:</strong>09:00 - 22:00</p>
+                <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
+                <p><strong>Péntek:</strong>09:00 - 22:00</p>
+                <p><strong>Szombat:</strong>09:00 - 22:00</p>
+                <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
+
+
+            </div>
         </div>
+
+
+
         <div class="copyright">
             <p>Copyright &copy; 2024 Minden jog fentartva! </p>
         </div>
-    </footer>
 
+
+    </footer>
     <script type="module" src="./scripts/about.js"></script>
 </body>
 
