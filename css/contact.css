@@ -1,4 +1,95 @@
 iframe {
     max-width: 600px;
-width: 100%;
+    width: 100%;
+}
+
+.contact-title {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.map-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-container {
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-btn {
+    width: fit-content;
+}
+
+.bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.address,
+.social {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+
+.address p {
+    width: 100%;
+
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
 }

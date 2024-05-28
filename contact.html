@@ -58,7 +58,7 @@
                         </ul>
                     </li>
                     <li><a class="nav-item js-menu-item" href="./index.html#events">Események</a></li>
-                    <li><a class="nav-item js-menu-item" href="./index.html#contact">Kapcsolat</a></li>
+                    <li><a class="nav-item js-menu-item" href="./contact.html">Kapcsolat</a></li>
                 </ul>
                 <form class="search" action="#" method="get">
                     <input class="search-input" type="text" name="search" placeholder="Termék keresése..">
@@ -78,15 +78,62 @@
 
     <!-- ----- Main Section ----- -->
     <main>
+        <h2 class="contact-title">Kérdése van? Üzenjen!</h2>
+        <section class="contact-container">
+            <div class="top-wrapper">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6392.716785128452!2d18.31924963279107!3d47.64933269283406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476a45e43978db33%3A0x27aa4c73938f30db!2sTatai%20v%C3%A1r!5e0!3m2!1shu!2shu!4v1716892799461!5m2!1shu!2shu"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
 
+                <div class="contact-form-container">
+                    <form action="#" class="contact-form" method="get">
+                        <label for="name"> Név</label>
+                        <input type="text" name="name" id="name" placeholder="Név">
+                        <label for="email">Email cím</label>
+                        <input type="email" name="email" placeholder="Email cím">
+                        <label for="message">Üzenet</label>
+                        <textarea name="message" id="message" rows="10" cols="50" placeholder="Üzenet"></textarea>
+                        <button class="btn contact-btn js-contact-btn" type="submit">Küldés <i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-wrapper">
 
+                <div class="address">
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1036.956805126308!2d18.90469558757738!3d47.61576678622573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476a776587c8205b%3A0xf733be4db468ec12!2zUGlsaXN2w7Zyw7ZzdsOhciwgTmFneXbDoXJhZGkgdS4gMTEsIDIwODU!5e0!3m2!1shu!2shu!4v1716398382170!5m2!1shu!2shu"
-            width="600" height="450" style="border:none;  " allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Címünk: </p>
+                    <p> Tata, Szabadság tér 6.</p>
+                    <p>Telefonszám: </p>
+                    <p>+36 34 123-4567</p>
+                    <p>Email cím:</p>
+                    <p>sample@gmail.com</p>
+
+                </div>
+                <div class="social">
+                    <div class="social-wrapper">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="social-wrapper">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="social-wrapper">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
+
+
 
     </main>
 
@@ -127,10 +174,12 @@
                             Elfogadod az adatkezelési tájékoztatót!
                         </label>
                     </div>
-                    <button type="submit" class="btn subscribe-btn">Küldés</button>
+                    <button type="submit" class="btn subscribe-btn">Felíratkozom! </button>
                 </div>
             </form>
         </div>
+
+
     </article>
 
 
@@ -140,11 +189,23 @@
 
 
 
-    </footer>
 
     <!-- Footer section -->
     <footer class="footer">
         <div class="footer-container">
+
+            <div class="opening-hours">
+                <h4 class="opening-hours-title">NYITVATARTÁS</h4>
+
+                <p><strong>Hétfő:</strong>Zárva</p>
+                <p><strong>Kedd:</strong>Zárva</p>
+                <p><strong>Szerda:</strong>09:00 - 22:00</p>
+                <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
+                <p><strong>Péntek:</strong>09:00 - 22:00</p>
+                <p><strong>Szombat:</strong>09:00 - 22:00</p>
+                <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
+            </div>
+
 
             <div class="footer-links">
                 <a href="">Adatvdelmi tájékoztató</a>
@@ -157,32 +218,18 @@
                     <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
-
-
-            <div class="opening-hours">
-
-                <h4 class="opening-hours-title">NYITVATARTÁS</h4>
-
-                <p><strong>Hétfő:</strong>Zárva</p>
-                <p><strong>Kedd:</strong>Zárva</p>
-                <p><strong>Szerda:</strong>09:00 - 22:00</p>
-                <p><strong>Csütörtök:</strong>09:00 - 22:00</p>
-                <p><strong>Péntek:</strong>09:00 - 22:00</p>
-                <p><strong>Szombat:</strong>09:00 - 22:00</p>
-                <p><strong>Vasárnap:</strong>09:00 - 22:00</p>
-
-
-            </div>
         </div>
-
-
 
         <div class="copyright">
             <p>Copyright &copy; 2024 Minden jog fentartva! </p>
         </div>
 
-
     </footer>
+
+    <div class="pageUpBtn js-pageUpBtn">
+        <a href="#"><i class="fa-solid fa-circle-up"></i></a>
+    </div>
+
     <script type="module" src="./scripts/main.js"></script>
 </body>
 
