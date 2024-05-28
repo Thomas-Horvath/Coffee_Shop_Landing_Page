@@ -158,7 +158,8 @@ img {
 .contact,
 .favorites,
 .gallery,
-.products {
+.products,
+.history-section {
     width: 100%;
     min-height: 100vh;
     padding-top: 5rem;
@@ -169,13 +170,26 @@ img {
     right: 30px;
     bottom: 40px;
     font-size: 3rem;
-    z-index: 10;
+    width: 3.7rem;
+    height: 3.6rem;
+    z-index: 5;
+    background-color: var(--white-smoke);
     cursor: pointer;
     transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .pageUpBtn a {
     color: var(--primary-color);
+}
+
+i.fa-solid.fa-circle-up::before {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
 }
 
 .pageUpBtn:hover {

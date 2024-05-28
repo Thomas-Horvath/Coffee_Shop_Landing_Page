@@ -1,8 +1,3 @@
-iframe {
-    max-width: 600px;
-    width: 100%;
-}
-
 .contact-title {
     text-align: center;
     margin: 2rem 0;
@@ -34,6 +29,11 @@ iframe {
     justify-content: center;
 }
 
+iframe {
+    max-width: 600px;
+    width: 100%;
+}
+
 .contact-form-container {
     width: 100%;
     padding: 1rem;
@@ -46,12 +46,22 @@ iframe {
     align-items: center;
     gap: 1rem;
 }
-
+.contact-form label {
+  
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
 .contact-form input,
 textarea {
     width: 100%;
     border: none;
     outline: none;
+    padding: .5rem;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
 textarea {
@@ -60,7 +70,19 @@ textarea {
 
 .contact-btn {
     width: fit-content;
+    background: transparent;
+    color: var(--secondary-color)
 }
+
+.contact-btn i {
+    margin-left: .5rem;
+}
+
+.contact-btn:hover {
+    color: var(--white-smoke);
+}
+
+
 
 .bottom-wrapper {
     display: flex;
@@ -70,8 +92,8 @@ textarea {
     justify-content: center;
 }
 
-.address,
-.social {
+.address-container,
+.social-container {
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -82,12 +104,11 @@ textarea {
     text-align: center;
 }
 
-.address p {
+.address-container p {
     width: 100%;
-
 }
 
-.social-wrapper {
+.social-section {
     display: flex;
     justify-content: center;
     gap: 1rem;

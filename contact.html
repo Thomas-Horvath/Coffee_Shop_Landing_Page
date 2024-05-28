@@ -78,7 +78,8 @@
 
     <!-- ----- Main Section ----- -->
     <main>
-        <h2 class="contact-title">Kérdése van? Üzenjen!</h2>
+        <h1 class="contact-title">Kérdése van? Üzenjen!</h1>
+
         <section class="contact-container">
             <div class="top-wrapper">
                 <div class="map-container">
@@ -91,8 +92,8 @@
 
                 <div class="contact-form-container">
                     <form action="#" class="contact-form" method="get">
-                        <label for="name"> Név</label>
-                        <input type="text" name="name" id="name" placeholder="Név">
+                        <label for="fullname"> Teljes név</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Név">
                         <label for="email">Email cím</label>
                         <input type="email" name="email" placeholder="Email cím">
                         <label for="message">Üzenet</label>
@@ -102,9 +103,10 @@
                     </form>
                 </div>
             </div>
-            <div class="bottom-wrapper">
 
-                <div class="address">
+
+            <div class="bottom-wrapper">
+                <div class="address-container">
 
                     <p>Címünk: </p>
                     <p> Tata, Szabadság tér 6.</p>
@@ -114,16 +116,16 @@
                     <p>sample@gmail.com</p>
 
                 </div>
-                <div class="social">
-                    <div class="social-wrapper">
+                <div class="social-container">
+                    <div class="social-section">
                         <i class="fa-brands fa-facebook-f"></i>
                         <p>Facebook</p>
                     </div>
-                    <div class="social-wrapper">
+                    <div class="social-section">
                         <i class="fa-brands fa-instagram"></i>
                         <p>Instagram</p>
                     </div>
-                    <div class="social-wrapper">
+                    <div class="social-section">
                         <i class="fa-brands fa-twitter"></i>
                         <p>Twitter</p>
                     </div>
@@ -133,54 +135,35 @@
 
         </section>
 
-
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <article class="subscribe">
-        <div class="subscribe-form-container">
-            <h2>Íratkozz fel hírlevelünkre!</h2>
-            <form action="#" method="get" class="subscribe-form">
-                <div class="input-section">
-                    <label>
-                        Neved
-                        <input type="text" name="name" id="name" autocomplete="name">
-                    </label>
-                    <label>
-                        Emai címed
-                        <input type="email" name="email" id="email" autocomplete="email">
-                    </label>
-                </div>
-                <div class="button-section">
-                    <div class="policy-section">
-                        <label for="check">
-                            <input type="checkbox" name="check" id="check">
-                            Elfogadod az adatkezelési tájékoztatót!
+<!-- subscribe form -->
+        <article class="subscribe">
+            <div class="subscribe-form-container">
+                <h2>Íratkozz fel hírlevelünkre!</h2>
+                <form action="#" method="get" class="subscribe-form">
+                    <div class="input-section">
+                        <label>
+                            Neved
+                            <input type="text" name="name" id="name" autocomplete="name">
+                        </label>
+                        <label>
+                            Emai címed
+                            <input type="email" name="email" id="email" autocomplete="email">
                         </label>
                     </div>
-                    <button type="submit" class="btn subscribe-btn">Felíratkozom! </button>
-                </div>
-            </form>
-        </div>
+                    <div class="button-section">
+                        <div class="policy-section">
+                            <label for="check">
+                                <input type="checkbox" name="check" id="check">
+                                Elfogadod az adatkezelési tájékoztatót!
+                            </label>
+                        </div>
+                        <button type="submit" class="btn subscribe-btn">Felíratkozom! </button>
+                    </div>
+                </form>
+            </div>
 
 
-    </article>
+        </article>
 
 
 
