@@ -1,11 +1,11 @@
 import { hamburgerMenu } from "./hamburger.js";
-
+const url = "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/products.json"
 
 
 
 // adatok betöltése a json fájlból
 async function productsRender() {
-    const response = await fetch('../data/products.json');
+    const response = await fetch(url);
     const data = await response.json();
     return data;
 }
@@ -36,6 +36,7 @@ function filterProducts(products, category) {
 function getCategoryFromUrl() {
     const params = new URLSearchParams(window.location.search);
     return params.get('category') || 'all';
+   
 };
 
 
