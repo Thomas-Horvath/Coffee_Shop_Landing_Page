@@ -1,7 +1,7 @@
 import { hamburgerMenu } from "./hamburger.js";
 const url = "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/products.json"
 
-
+hamburgerMenu();
 
 // adatok betöltése a json fájlból
 async function productsRender() {
@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         renderProducts(filteredProducts, productContainer);
         setupEventListener(products, productContainer);
-
+       
     }
 });
 
-hamburgerMenu();
+
