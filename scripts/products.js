@@ -45,10 +45,12 @@ function getCategoryFromUrl() {
 function setupEventListener(products, container) {
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
             const category = button.getAttribute('data-category');
             const filteredProducts = filterProducts(products, category);
             renderProducts(filteredProducts, container);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     })
 };
