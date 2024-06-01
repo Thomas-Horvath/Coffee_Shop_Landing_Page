@@ -1,0 +1,460 @@
+[
+    {
+        "id": 1,
+        "name": "Epres kávékoktél",
+        "description": "Az epres kévákoktél egy frissítő ital, amely a krémes kávé gazdag ízvilágát ötvözi az édes, érett eper zamataival. Tökéletes választás azoknak, akik egy különleges, gyümölcsös csavarral szeretnék feldobni a kávézás élményét.",
+        "ingredients": [
+            "20 dkg eper",
+            "1 ek méz",
+            "1ml pálinka",
+            "100ml feketekávé",
+            "2 ek habtejszín"
+        ],
+        "price": 800,
+        "rate": 4.8,
+        "calories": 224,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/strawberry_coffee.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Narancsos-tonikos eszpresszó",
+        "description": "A narancsos-tonikos eszpresszó egy izgalmas kombinációja az intenzív eszpresszónak és a pezsgő toniknak, amelyet a narancs frissítő citrusos aromája tesz különlegessé. Ideális egy meleg nyári napon, amikor valami hűsítő és energizáló italra vágyunk.",
+        "ingredients": [
+            "5 dl tonik",
+            "4 db narancs",
+            "2 dl presszókévá"
+        ],
+        "price": 700,
+        "rate": 5.0,
+        "calories": 92,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/orange_expresso.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ír kávé",
+        "description": "Ezzel az isteni ír kávéval könnyedén változatosságot csempészhetünk a reggeli vagy délutáni kávézásba. Az ital alkoholtartalma miatt azonban inkább csak lustálkodós hétvégékre ajánljuk, mert utána egy darabig nem szabad autóba ülni!",
+        "ingredients": [
+            "3 ek őrölt kávé",
+            "3 dl víz",
+            "2 teáskanál nádcukor",
+            "2 teáskanál cukor",
+            "80 ml Whisky",
+            "1 dl habtejszín",
+            "20g étcsokoládé"
+        ],
+        "price": 600,
+        "rate": 4.9,
+        "calories": 339,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/irish_coffee.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Espresso",
+        "description": "Az eszpresszó egy erős, koncentrált kávéital, amelyet kis adagban, gyorsan készítenek el. Ideális energiaforrás reggelre vagy délutánra.",
+        "ingredients": [
+            "7 g finomra őrölt kávé",
+            "30 ml víz"
+        ],
+        "price": 500,
+        "rate": 4.5,
+        "calories": 5,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m1.png"
+    },
+    {
+        "id": 5,
+        "name": "Cappuccino",
+        "description": "A cappuccino egy klasszikus olasz kávéital, amely eszpresszóból, forró tejből és habosított tejből készül. Krémes állaga és gazdag ízvilága teszi igazán különlegessé.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "100 ml gőzölt tej",
+            "100 ml habosított tej"
+        ],
+        "price": 600,
+        "rate": 4.7,
+        "calories": 150,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m2.png"
+    },
+    {
+        "id": 6,
+        "name": "Latte",
+        "description": "A latte egy népszerű kávéital, amely eszpresszóból és bőséges mennyiségű gőzölt tejből áll, tetején egy kevés habosított tejjel. Lágy és krémes, tökéletes választás minden napszakban.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "200 ml gőzölt tej",
+            "20 ml habosított tej"
+        ],
+        "price": 650,
+        "rate": 4.6,
+        "calories": 190,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m3.png"
+    },
+    {
+        "id": 7,
+        "name": "Americano",
+        "description": "Az Americano egy egyszerű, mégis ízletes kávéital, amely forró víz hozzáadásával készül az eszpresszóból. Lágyabb ízvilága miatt sokan kedvelik.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "100 ml forró víz"
+        ],
+        "price": 550,
+        "rate": 4.3,
+        "calories": 10,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m4.png"
+    },
+    {
+        "id": 8,
+        "name": "Macchiato",
+        "description": "A macchiato egy erős eszpresszó, amelyet egy kis habosított tejjel koronáznak meg. Intenzív íze és krémes textúrája miatt különösen népszerű.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "10 ml habosított tej"
+        ],
+        "price": 600,
+        "rate": 4.4,
+        "calories": 20,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m5.png"
+    },
+    {
+        "id": 9,
+        "name": "Mocha",
+        "description": "A mocha egy gazdag és csokoládés kávéital, amely eszpresszóból, csokoládészirupból és gőzölt tejből készül. Tetejét gyakran tejszínhabbal és csokoládé reszelékkel díszítik.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "2 ek csokoládészirup",
+            "200 ml gőzölt tej",
+            "tejszínhab",
+            "csokoládé reszelék"
+        ],
+        "price": 700,
+        "rate": 4.8,
+        "calories": 250,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m6.png"
+    },
+    {
+        "id": 10,
+        "name": "Flat White",
+        "description": "A Flat White egy ausztrál kávéital, amely eszpresszóból és selymes, mikroszálas tejhabból készül. Íze gazdag és krémes, tökéletes választás a kávérajongóknak.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "150 ml mikroszálas tejhab"
+        ],
+        "price": 650,
+        "rate": 4.7,
+        "calories": 130,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m7.png"
+    },
+    {
+        "id": 11,
+        "name": "Cortado",
+        "description": "A Cortado egy kiegyensúlyozott kávéital, amely eszpresszóból és egyenlő mennyiségű gőzölt tejből készül. Erőteljes, mégis lágy ízvilága miatt kedvelt.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "1 adag gőzölt tej"
+        ],
+        "price": 600,
+        "rate": 4.6,
+        "calories": 60,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m8.png"
+    },
+    {
+        "id": 12,
+        "name": "Affogato",
+        "description": "Az Affogato egy olasz desszert, amely egy adag forró eszpresszót önt vaníliafagylaltra. Az édes és keserű ízek tökéletes harmóniáját kínálja.",
+        "ingredients": [
+            "1 adag eszpresszó",
+            "1 gombóc vaníliafagylalt"
+        ],
+        "price": 700,
+        "rate": 4.9,
+        "calories": 200,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m9.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Ristretto",
+        "description": "A ristretto egy erőteljes és koncentrált eszpresszó, amelyet kevesebb vízzel készítenek. Íze intenzív és aromás, tökéletes választás a kávé szerelmeseinek.",
+        "ingredients": [
+            "7 g finomra őrölt kávé",
+            "15 ml víz"
+        ],
+        "price": 500,
+        "rate": 4.5,
+        "calories": 5,
+        "categoryName": "kávé",
+        "imgUrl": "./assets/products_img/m10.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Sajtos pogácsa",
+        "description": "A sajtos pogácsa egy klasszikus magyar sós sütemény, amelyet reszelt sajttal gazdagítanak. Frissen sütve az egyik legjobb választás reggelire vagy uzsonnára.",
+        "ingredients": [
+            "liszt",
+            "vaj",
+            "só",
+            "reszelt sajt",
+            "tej",
+            "élesztő"
+        ],
+        "price": 300,
+        "rate": 4.4,
+        "calories": 250,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/scone.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Croissant",
+        "description": "A croissant egy könnyű és vajjal gazdagított francia péksütemény, amely kívül ropogós, belül puha és réteges. Kiváló választás reggelire vagy kávé mellé.",
+        "ingredients": [
+            "liszt",
+            "vaj",
+            "cukor",
+            "élesztő",
+            "tej"
+        ],
+        "price": 350,
+        "rate": 4.6,
+        "calories": 260,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/croissant.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Túrós táska",
+        "description": "A túrós táska egy édes, túróval töltött sütemény, amely kívül ropogós, belül krémes. Tökéletes választás egy gyors reggelihez vagy desszertként.",
+        "ingredients": [
+            "liszt",
+            "túró",
+            "vaj",
+            "cukor",
+            "tojás",
+            "vanília"
+        ],
+        "price": 320,
+        "rate": 4.5,
+        "calories": 280,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/cookies2.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Csokis muffin",
+        "description": "A csokis muffin egy édes és gazdag csokoládéval töltött sütemény, amely kívül ropogós, belül puha. Ideális választás desszertként vagy uzsonnára.",
+        "ingredients": [
+            "liszt",
+            "cukor",
+            "kakaópor",
+            "csokoládé darabok",
+            "tojás",
+            "tej",
+            "vaj"
+        ],
+        "price": 300,
+        "rate": 4.7,
+        "calories": 290,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/muffin.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Baileys",
+        "description": "A Baileys egy ír krémlikőr, amely whisky és tejszín kombinációjával készül. Édes és krémes íze miatt desszertként vagy kávé mellé is fogyasztható.",
+        "ingredients": [
+            "whisky",
+            "tejszín",
+            "cukor",
+            "kakaó",
+            "vanília"
+        ],
+        "price": 950,
+        "rate": 4.8,
+        "calories": 327,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/cookies1.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Coca Cola",
+        "description": "A Coca Cola egy népszerű szénsavas üdítőital, amelyet kóla ízével és cukortartalmával ismernek. Frissítő választás bármely napszakban.",
+        "ingredients": [
+            "víz",
+            "cukor",
+            "szén-dioxid",
+            "koffein",
+            "kóla aromák"
+        ],
+        "price": 250,
+        "rate": 4.6,
+        "calories": 140,
+        "categoryName": "üdítő",
+        "imgUrl": "./assets/products_img/coke.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Sprite",
+        "description": "A Sprite egy citrom-lime ízű szénsavas üdítőital, amely frissítő és cukortartalmával népszerű. Kiváló választás a meleg napokon.",
+        "ingredients": [
+            "víz",
+            "cukor",
+            "szén-dioxid",
+            "citrom-lime aromák"
+        ],
+        "price": 250,
+        "rate": 4.5,
+        "calories": 140,
+        "categoryName": "üdítő",
+        "imgUrl": "./assets/products_img/sprite.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Szénsavas ásványvíz",
+        "description": "A szénsavas ásványvíz egy frissítő ital, amelyet természetes ásványvizek szén-dioxiddal való dúsításával állítanak elő. Ideális választás a hidratáláshoz.",
+        "ingredients": [
+            "ásványvíz",
+            "szén-dioxid"
+        ],
+        "price": 200,
+        "rate": 4.3,
+        "calories": 0,
+        "categoryName": "üdítő",
+        "imgUrl": "./assets/products_img/water.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Mentes ásványvíz",
+        "description": "A mentes ásványvíz természetes ásványvíz, amely szén-dioxid hozzáadása nélkül készül. Tiszta íze és hidratáló hatása miatt kedvelt.",
+        "ingredients": [
+            "ásványvíz"
+        ],
+        "price": 200,
+        "rate": 4.2,
+        "calories": 0,
+        "categoryName": "üdítő",
+        "imgUrl": "./assets/products_img/soft_water.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Fanta",
+        "description": "A Fanta egy narancs ízű szénsavas üdítőital, amely frissítő ízével és cukortartalmával ismert. Kiváló választás bármikor, amikor egy kis édességre vágyunk.",
+        "ingredients": [
+            "víz",
+            "cukor",
+            "szén-dioxid",
+            "narancs aromák"
+        ],
+        "price": 250,
+        "rate": 4.4,
+        "calories": 150,
+        "categoryName": "üdítő",
+        "imgUrl": "./assets/products_img/fanta.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Heineken",
+        "description": "A Heineken egy világos sör, amely gazdag ízvilágával és frissítő hatásával népszerű. Tökéletes választás egy meleg nyári estén.",
+        "ingredients": [
+            "víz",
+            "árpamaláta",
+            "komló",
+            "élesztő"
+        ],
+        "price": 500,
+        "rate": 4.5,
+        "calories": 150,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/heineken.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Arany Ászok",
+        "description": "Az Arany Ászok egy magyar világos sör, amely kellemes ízvilágával és frissítő hatásával kedvelt. Ideális választás baráti összejövetelekre.",
+        "ingredients": [
+            "víz",
+            "árpamaláta",
+            "komló",
+            "élesztő"
+        ],
+        "price": 450,
+        "rate": 4.4,
+        "calories": 160,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/arany_aszok.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Jack Daniels",
+        "description": "A Jack Daniels egy ikonikus amerikai whisky, amely gazdag ízvilágáról és sima textúrájáról ismert. Tökéletes választás tisztán, jéggel vagy koktélokban.",
+        "ingredients": [
+            "víz",
+            "kukorica",
+            "árpa",
+            "rozs",
+            "élesztő"
+        ],
+        "price": 1000,
+        "rate": 4.8,
+        "calories": 240,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/whisky.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Pálinka",
+        "description": "A pálinka egy tradicionális magyar gyümölcspárlat, amelyet különböző gyümölcsökből készítenek. Erős alkoholtartalmával és gazdag ízével kedvelt.",
+        "ingredients": [
+            "gyümölcs",
+            "víz",
+            "élesztő"
+        ],
+        "price": 800,
+        "rate": 4.7,
+        "calories": 210,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/palinka.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Vörösbor",
+        "description": "Az Unicum egy tradicionális magyar keserűlikőr, amely gyógynövényekből készül. Intenzív ízével és erős alkoholtartalmával különleges ital.",
+        "ingredients": [
+            "gyógynövények",
+            "víz",
+            "cukor"
+        ],
+        "price": 900,
+        "rate": 4.6,
+        "calories": 200,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/wine.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Baileys",
+        "description": "A Baileys egy ír krémlikőr, amely whisky és tejszín kombinációjával készül. Édes és krémes íze miatt desszertként vagy kávé mellé is fogyasztható.",
+        "ingredients": [
+            "whisky",
+            "tejszín",
+            "cukor",
+            "kakaó",
+            "vanília"
+        ],
+        "price": 950,
+        "rate": 4.8,
+        "calories": 327,
+        "categoryName": "alkohol",
+        "imgUrl": "./assets/products_img/baileys.jpg"
+    }
+   
+]
