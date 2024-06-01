@@ -1,0 +1,35 @@
+.products {
+    min-height:100vh;
+    padding-top: 1rem;
+}
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem .5rem 3rem;
+}
+.product-select-btn {
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    padding: .5rem 1rem;
+}
+.product-select-btn:hover {
+    color: var(--white-smoke);
+}
