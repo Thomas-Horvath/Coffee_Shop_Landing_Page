@@ -20,6 +20,7 @@ function renderProducts(productsToRender, container) {
         </div>  
         `).join("");
     container.innerHTML = productCard;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 
@@ -50,7 +51,7 @@ function setupEventListener(products, container) {
             const category = button.getAttribute('data-category');
             const filteredProducts = filterProducts(products, category);
             renderProducts(filteredProducts, container);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+         
         });
     })
 };
