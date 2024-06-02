@@ -1,9 +1,6 @@
 import { hamburgerMenu } from './hamburger.js';
 import { fetchProduct } from './fetch.js';
 
-// hamburger menu function
-hamburgerMenu();
-
 
 //  selected elements
 const cookies = document.querySelector('.cookies');
@@ -14,29 +11,26 @@ const favoriteContainer = document.querySelector('.favorite-cards');
 
 
 
-
-
-
 // management of cookies
-document.addEventListener("DOMContentLoaded", () => {
-    //az oldal betöltődésekor -> lefut a cookiesPopup függvény
+function cookiesPopup() {
+    const acceptedCookies = sessionStorage.getItem("acceptedCookies");
+    // elmentjük a sessionStorege acceptCookies kulcshoz tartozó értéket. (nincs értéke még itt)
 
-    function cookiesPopup() {
-        const acceptedCookies = sessionStorage.getItem("acceptedCookies");
-        // elmentjük a sessionStorege acceptCookies kulcshoz tartozó értéket. (nincs értéke még itt)
+    if (!acceptedCookies) { // ha az érték nem true  akkor futnak a függvények
+        setTimeout(() => {
+            cookies.classList.add("cookie-active");
+        }, 3000);
 
-        if (!acceptedCookies) { // ha az érték nem true  akkor futnak a függvények
-            setTimeout(() => {
-                cookies.classList.add("cookie-active");
-            }, 3000);
-
-            cookiesBtn.addEventListener("click", () => {
-                cookies.classList.remove("cookie-active");
-                sessionStorage.setItem("acceptedCookies", "true"); // itt true-ra állítjuk az értéket.
-            });
-        };
+        cookiesBtn.addEventListener("click", () => {
+            cookies.classList.remove("cookie-active");
+            sessionStorage.setItem("acceptedCookies", "true"); // itt true-ra állítjuk az értéket.
+        });
     };
+};
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
     cookiesPopup();
 });
 
@@ -76,5 +70,9 @@ async function renderfavoriteCards() {
     const cards = await fetchProduct();
     const threeCards = cards.slice(0, 3);
     renderMainProductsCards(threeCards, favoriteContainer);
-}
+};
+
+
+
+hamburgerMenu();
 renderfavoriteCards();

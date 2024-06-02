@@ -23,6 +23,7 @@
     --primary-color: #a98b6f;
     --primary-color-variant-1: #75563a;
     --secondary-color: #403122;
+    --third-color: #b89d65;
     --white-smoke: #f7f5f2;
     --white: #ffffff;
     --white-variant-1: #eee;
@@ -143,16 +144,8 @@ img {
 }
 
 .section-title img {
-
     height: 2.2rem;
 }
-
-
-
-
-
-
-
 
 
 
