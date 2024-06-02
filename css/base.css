@@ -155,15 +155,6 @@ img {
 
 
 
-.contact,
-.favorites,
-.gallery,
-
-.history-section {
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 5rem;
-}
 
 .pageUpBtn {
     position: fixed;
@@ -194,4 +185,20 @@ i.fa-solid.fa-circle-up::before {
 
 .pageUpBtn:hover {
     transform: scale(1.2);
+}
+
+
+
+
+.contact,
+.favorites,
+.gallery,
+
+.history-section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+.testimonial {
+    height: 60vh;
 }

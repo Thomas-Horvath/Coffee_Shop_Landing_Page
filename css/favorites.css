@@ -1,4 +1,4 @@
-.favorites-cards {
+.favorite-cards {
     display: flex;
     flex-direction: column;  /*!*/
     gap: 2rem;
@@ -14,7 +14,7 @@
     
 }
 
-.favorites-card {
+.favorite-card {
    
     background: var(--white);
    
@@ -29,7 +29,7 @@
 
 }
 
-.favorites-card img {
+.favorite-card img {
     width: 100%;
     max-width: 24rem;
     height: 21rem;
@@ -37,12 +37,12 @@
     opacity: .9;
 
 }
-.favorites-card:hover img {
+.favorite-card:hover img {
     transform: scale(1.05);
   transition: all 0.4s ease;
   opacity: 1;
 }
-.favorites-card h3 {
+.favorite-card h3 {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -68,7 +68,7 @@
 }
 
 
-.favorites-card:nth-child(2) {
+.favorite-card:nth-child(2) {
     width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }

@@ -17,17 +17,17 @@
         font-size: 1.1rem;
     }
 
-    .favorites-cards {
+    .favorite-cards {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
     }
 
-    .favorites-card {
+    .favorite-card {
         width: 24rem;
     }
 
-    .favorites-card:nth-child(2) {
+    .favorite-card:nth-child(2) {
         width: 24rem;
         min-height: 35rem;
     }
@@ -298,21 +298,21 @@
         font-size: 1.2rem;
     }
 
-    .favorites-cards {
+    .favorite-cards {
         gap: 0;
     }
 
-    .favorites-card img {
+    .favorite-card img {
         max-width: 100%;
     }
 
 
-    .favorites-card:nth-child(2) {
+    .favorite-card:nth-child(2) {
         width: 26rem;
         min-height: 40rem;
     }
 
-    .favorites-card:nth-child(2) img {
+    .favorite-card:nth-child(2) img {
         height: 26rem;
     }
 
