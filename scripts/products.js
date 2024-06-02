@@ -9,19 +9,22 @@ function renderProductsCards(productsToRender, container) {
         <div class="product-card">
             <img src="${product.imgUrl}" alt="${product.name}">
             <h3>${product.name}</h3>
-            <div class="card-content">
-            <div class="rate-container">
-            <div class="rate-satrs">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="rate">${product.rate}</p>
-        </div>
-               <p>${product.description}</p>
-                <p>Ár: ${product.price} Ft</p>
+            <div class="content-wrapper">
+                <div class="content-top">
+                    <div class="rate-container">
+                        <div class="rate-satrs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="rate">${product.rate}</p>
+                    </div>
+                    <p class="calories">${product.calories} Kcla</p>
+                    <p>${product.description}</p>
+                </div>
+                <p class="price">Ár: ${product.price} Ft</p>
             </div>
         </div>  
         `).join("");

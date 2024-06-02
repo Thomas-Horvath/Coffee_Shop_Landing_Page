@@ -164,7 +164,7 @@ img {
     width: 3.7rem;
     height: 3.6rem;
     z-index: 5;
-    background-color: var(--white-smoke);
+  
     cursor: pointer;
     transition: transform .3s;
     display: flex;

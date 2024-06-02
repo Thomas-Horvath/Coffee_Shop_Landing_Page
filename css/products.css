@@ -1,7 +1,10 @@
 .products {
-    min-height:100vh;
+    min-height: 100vh;
     padding-top: 1rem;
 }
+
+
+
 .products-container {
     display: flex;
     justify-content: center;
@@ -9,19 +12,74 @@
     flex-wrap: wrap;
     max-width: 1400px;
     margin: auto;
+    padding-bottom: 3rem;
 }
 
+
+/* cards  */
 .product-card {
     width: 300px;
     background: var(--white);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    
+    display: flex;
+    flex-direction: column;
 }
+
 .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: contain;
+    height: 300px;
+    object-fit: cover;
 }
+
+.content-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content-top {
+    flex-grow: 1;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.rate-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+
+.rate-satrs i {
+    color: var(--stars-color);
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--red);
+    margin: 1rem 0;
+}
+
+.calories {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
+
+
 .button-group {
     display: flex;
     justify-content: center;
@@ -29,12 +87,14 @@
     gap: 1rem;
     padding: 1rem .5rem 3rem;
 }
+
 .product-select-btn {
     background: transparent;
     color: var(--secondary-color);
     font-size: 1rem;
     padding: .5rem 1rem;
 }
+
 .product-select-btn:hover {
     color: var(--white-smoke);
 }

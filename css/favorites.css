@@ -1,24 +1,23 @@
 .favorite-cards {
     display: flex;
-    flex-direction: column;  /*!*/
+    flex-direction: column;
+    /*!*/
     gap: 2rem;
     justify-content: center;
     align-items: center;
     margin: 8rem auto;
     max-width: 1400px;
-    
+
 }
 
 .content-wrapper {
     width: 80%;
-    
+
 }
 
 .favorite-card {
-   
     background: var(--white);
-   
- width: 100%;
+    width: 100%;
     min-height: 35rem;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
     display: flex;
@@ -26,7 +25,6 @@
     align-items: center;
     object-fit: cover;
     overflow: hidden;
-
 }
 
 .favorite-card img {
@@ -37,11 +35,13 @@
     opacity: .9;
 
 }
+
 .favorite-card:hover img {
     transform: scale(1.05);
-  transition: all 0.4s ease;
-  opacity: 1;
+    transition: all 0.4s ease;
+    opacity: 1;
 }
+
 .favorite-card h3 {
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -56,13 +56,14 @@
     padding: 1rem;
     font-size: 1.4rem;
 }
+
 .price {
     font-size: 2rem;
     padding: 1rem;
     font-weight: 500;
     color: var(--red);
-
 }
+
 .rate-satrs i {
     color: var(--stars-color);
 }
