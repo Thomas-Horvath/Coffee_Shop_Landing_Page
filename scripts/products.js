@@ -2,10 +2,17 @@ import { fetchProduct } from "./fetch.js";
 import { hamburgerMenu } from "./hamburger.js";
 
 hamburgerMenu();
+const noResultsMessage = document.querySelector('.no-results-message');
+
 
 // a kártyák létrehozása
 function renderProductsCards(productsToRender, container) {
-    const productCard = productsToRender.map(product => `
+    if (productsToRender.length === 0) {
+        noResultsMessage.classList.add('d-flex')
+        container.innerHTML = '';
+    } else {
+        noResultsMessage.classList.remove('d-flex');
+        const productCard = productsToRender.map(product => `
         <div class="product-card">
             <img src="${product.imgUrl}" alt="${product.name}">
             <h3>${product.name}</h3>
@@ -28,7 +35,8 @@ function renderProductsCards(productsToRender, container) {
             </div>
         </div>  
         `).join("");
-    container.innerHTML = productCard;
+        container.innerHTML = productCard;
+    }
 };
 
 
