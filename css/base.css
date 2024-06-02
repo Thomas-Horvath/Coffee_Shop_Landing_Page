@@ -153,32 +153,39 @@ img {
     position: fixed;
     right: 30px;
     bottom: 40px;
-    font-size: 3rem;
+  
     width: 3.7rem;
     height: 3.6rem;
     z-index: 5;
-  
     cursor: pointer;
     transition: transform .3s;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background: #11111155;
 }
 
 .pageUpBtn a {
-    color: var(--primary-color);
+    color: var(--white-smoke);
+    font-size: 2rem;
 }
 
-i.fa-solid.fa-circle-up::before {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-}
+
 
 .pageUpBtn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

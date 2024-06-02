@@ -58,6 +58,9 @@
     .subscribe {
         width: 80%;
     }
+    .pageUpBtn {
+        display: flex;
+    }
 }
 
 
