@@ -1,32 +1,15 @@
 import { hamburgerMenu } from './hamburger.js';
 import { fetchProduct } from './fetch.js';
-
+import { cookiesPopup } from './cookies.js';
 
 //  selected elements
-const cookies = document.querySelector('.cookies');
-const cookiesBtn = document.querySelector('.cookies-btn');
+
 const favoriteContainer = document.querySelector('.favorite-cards');
 
 
 
 
 
-// management of cookies
-function cookiesPopup() {
-    const acceptedCookies = sessionStorage.getItem("acceptedCookies");
-    // elmentjük a sessionStorege acceptCookies kulcshoz tartozó értéket. (nincs értéke még itt)
-
-    if (!acceptedCookies) { // ha az érték nem true  akkor futnak a függvények
-        setTimeout(() => {
-            cookies.classList.add("cookie-active");
-        }, 3000);
-
-        cookiesBtn.addEventListener("click", () => {
-            cookies.classList.remove("cookie-active");
-            sessionStorage.setItem("acceptedCookies", "true"); // itt true-ra állítjuk az értéket.
-        });
-    };
-};
 
 
 

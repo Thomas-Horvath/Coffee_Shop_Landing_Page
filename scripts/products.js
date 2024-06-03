@@ -1,5 +1,6 @@
 import { fetchProduct } from "./fetch.js";
 import { hamburgerMenu } from "./hamburger.js";
+import { cookiesPopup } from './cookies.js';
 
 hamburgerMenu();
 const noResultsMessage = document.querySelector('.no-results-message');
@@ -115,6 +116,8 @@ function setupSearchListener(products, container) {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    cookiesPopup();
+
     const productContainer = document.querySelector(".js-products-container");
     if (productContainer) { //megvizsgáljuk létezik e a konténer
 
@@ -135,6 +138,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setupSearchListener(products, productContainer);
     };
 });
+
 
 
 
