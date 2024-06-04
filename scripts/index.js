@@ -59,3 +59,17 @@ async function renderfavoriteCards() {
 
 hamburgerMenu();
 renderfavoriteCards();
+
+
+
+// console.log(1)
+// fetch('http://dummyjson.com/users')
+// .then(res => res.json())
+// .then((data) => {console.log(data), console.log(2)});
+
+// console.log(3)
+
+
+// const response = await fetch('http://dummyjson.com/users');
+// const data = await response.json();
+// console.log(data);
