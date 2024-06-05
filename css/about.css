@@ -2,37 +2,53 @@
     max-width: 1400px;
     margin: auto;
     display: grid;
-    grid-template-areas: 
-    'top'
-    'img1'
-    'bottom'
-    'img2'
+    grid-template-areas:
+        'top'
+        'img1'
+        'bottom'
+        'img2'
     ;
-    padding-top: 1rem;
 }
+
+.title-container {
+    margin-top: 1rem;
+
+}
+.title-container img {
+    height: 100%;
+}
+.title-container h2 {
+    font-size: 3rem;
+}
+
 .top-content {
     width: 100%;
     height: auto;
     grid-area: top;
-    padding: 2rem 1.2rem;
+    padding: 1rem 1.2rem;
 }
+
 .about-img-1 {
     grid-area: img1;
     object-fit: cover;
     height: 100%;
 }
+
 .about-img-2 {
-grid-area: img2;
-object-fit: cover;
-height: 100%;
+    grid-area: img2;
+    object-fit: cover;
+    height: 100%;
 
 }
+
 .bottom-content {
-grid-area: bottom;
-height: auto;
-padding: 2rem 1.2rem;
+    grid-area: bottom;
+    height: auto;
+    padding: 2rem 1.2rem;
 }
-.top-content-text , .bottom-content-text {
+
+.top-content-text,
+.bottom-content-text {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     font-weight: 400;

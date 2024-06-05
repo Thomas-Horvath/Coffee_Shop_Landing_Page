@@ -61,6 +61,32 @@
     .pageUpBtn {
         display: flex;
     }
+    .footer-container {
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 3rem;
+       padding: 2rem;
+    }
+    .footer-links {
+      width: 20%;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+    }
+    .opening-hours {
+        width: 20%;
+        margin: 0;
+    }
+    .footer-links a {
+        margin-bottom: 0;
+       font-size: 1.1rem;
+    }
+    .social-links {
+        width: 300px;
+        align-items: center;
+        gap: 2rem;
+    }
+  
 }
 
 

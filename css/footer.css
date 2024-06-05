@@ -1,40 +1,98 @@
 .footer {
-    height: 340px;
+    height: auto;
     background: var(--black-variant-2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-color: var(--white-smoke);
+    color: var(--white-smoke);
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     max-width: 1400px;
-    margin: 0 auto;
-gap: 1rem;
+    padding: 2rem 2rem 1rem 2rem;
+    gap: 2rem;
+
 }
+
 .footer-links a {
     color: var(--white-smoke);
+    margin-bottom: .5rem;
 }
+
+.opening-hours-title {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
 .opening-hours {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
 }
+
+
+
+.opening-hours strong {
+    margin-right: .8rem;
+}
+
+
+
 
 .footer-links {
     display: flex;
     flex-direction: column;
+  
+    text-align: center;
+    font-size: 1.3rem;
 }
+
+.footer-links a {
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    color: var(--white-variant-2);
+    text-decoration: underline;
+}
+
+
+
+
+.social-links {
+    padding: 1rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1400px;
+}
+
+.social-links i:hover {
+    color: var(--white-variant-2);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
 
 .copyright {
-    height: 6vh;
+    height: 2rem;
     background: var(--black-variant-1);
-    color: var(--white-smoke);
-    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
+.copyright p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--white-smoke);
+}
 
 
 
