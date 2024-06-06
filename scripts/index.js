@@ -1,6 +1,7 @@
 import { hamburgerMenu } from './hamburger.js';
 import { fetchProduct } from './fetch.js';
 import { cookiesPopup } from './cookies.js';
+import { subscribeValidation } from './subscribeValidation.js';
 
 //  selected elements
 
@@ -17,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     cookiesPopup();
 });
 
-
+subscribeValidation();
 
 
 
 
 // favorite cards
 function renderMainProductsCards(productsToRender, container) {
-    const productCard = productsToRender.map((product , index) => `
+    const productCard = productsToRender.map((product, index) => `
         <div class="favorite-card ${index === 1 ? 'big-card' : ''}">
             <img src="${product.imgUrl}" alt="${product.name}">
             <div class="content-wrapper">
@@ -73,3 +74,53 @@ renderfavoriteCards();
 // const response = await fetch('http://dummyjson.com/users');
 // const data = await response.json();
 // console.log(data);
+
+
+// console.log(document.querySelector('.checkbox').checked);
+// const subscribeForm = document.querySelector('.js-subscribe')
+// const validationText = document.querySelector('.js-validation-text');
+// const checkbox = document.querySelector('.js-checkbox')
+// const emailInput = document.querySelector('.js-input-email');
+// const nameInput = document.querySelector('.js-input-name');
+
+
+
+
+
+// subscribeForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     let isValid = true;
+    
+    
+
+//     console.log(nameInput)
+//     if (nameInput.value.trim() === '' ) {
+//         validationText.classList.add('red-color');
+//         validationText.innerHTML = ` ❌ A név megadása kötelező!`;
+//         isValid = false;
+//         return;
+//     };
+
+//     let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+//     if (!emailPattern.test(emailInput.value)) {
+//         validationText.innerHTML = ` ❌ Érvényes email címet kell megadni!`;
+//         isValid = false;
+//         return;
+//     };
+
+
+//     if (checkbox.checked && isValid === true) {
+//         validationText.classList.remove('red-color');
+//         validationText.innerHTML = `✅ Köszönjük a felíratkozást!`
+//         setTimeout(() => {
+//             subscribeForm.reset();
+//             validationText.innerHTML = "* A mezők kitöltése kötelező!";
+
+//         }, 2000)
+//     } else {
+//         validationText.innerHTML = ` ❌ Az adatakezelési tájékoztatót el kell fogadni!`
+//     }
+
+
+
+// })
