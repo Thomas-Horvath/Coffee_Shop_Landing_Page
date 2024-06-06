@@ -39,6 +39,9 @@
 
 /* -----medium devices ----- */
 @media screen and (min-width: 768px) {
+    .header {
+        padding: 0 1rem;
+    }
     .banner h1 {
         font-size: 2.6rem;
     }
@@ -55,38 +58,45 @@
     .hero-main-title {
         font-size: 5rem;
     }
-    .subscribe {
-        width: 80%;
+
+
+    .validation-text {
+        height: 1.2rem;
     }
-    .pageUpBtn {
-        display: flex;
+  
+    
+    /* footer  */
+    .footer {
+        padding-top: 3rem;
     }
+
     .footer-container {
-        flex-direction: row;
-        justify-content:space-between;
-        gap: 3rem;
-       padding: 2rem;
+        justify-content: center;
+        gap: 0;
+        padding: 2rem;
     }
+
     .footer-links {
-      width: 20%;
-        justify-content: end;
         align-items: center;
-        gap: 1rem;
     }
+
     .opening-hours {
-        width: 20%;
         margin: 0;
     }
+
     .footer-links a {
         margin-bottom: 0;
-       font-size: 1.1rem;
+        font-size: 1.1rem;
     }
+
     .social-links {
-        width: 300px;
         align-items: center;
         gap: 2rem;
     }
-  
+
+    .pageUpBtn {
+        display: block;
+    }
 }
 
 
@@ -99,7 +109,7 @@
         height: 2.2rem;
         display: flex;
         align-items: center;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .global-header-wrapper {
@@ -165,7 +175,9 @@
         border: none;
         height: 100%;
     }
-
+    .logo img {
+        height: 82%;
+    }
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -315,16 +327,37 @@
         padding: 0 1rem;
         margin-bottom: 1rem;
     }
+
+     /* subscription */
+     .subscribe {
+        padding: 1rem 0;
+     }
+     .subscribe-form {
+        width: 100%;
+    }
+
+    .input-section {
+        flex-direction: row;
+    }
+
+    .button-section {
+        flex-direction: row;
+        gap: 3rem;
+    }
 }
 
 
 /* -----X-large devices ----- */
 @media screen and (min-width: 1200px) {
 
+    .logo img {
+        height: 100%;
+        box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
+    }
     .nav-item,
     .sublist-items {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .favorite-cards {
@@ -345,6 +378,7 @@
         height: 26rem;
     }
 
+   
 }
 
 

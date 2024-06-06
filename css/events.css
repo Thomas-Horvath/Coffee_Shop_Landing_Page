@@ -29,3 +29,10 @@ video {
 .event-content h2 {
     color: #f7f5f2;
 }
+.events-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
