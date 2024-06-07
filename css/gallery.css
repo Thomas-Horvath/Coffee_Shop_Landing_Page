@@ -1,8 +1,13 @@
 .gallery {
     padding: 5rem 0 6rem 0;
-    max-width:1400px ;
+    max-width: 1400px;
     margin: auto;
 }
+
+.gallery p {
+    padding: 0 1rem 2rem 1rem;
+}
+
 .gallery-title {
     margin: 0 0 2rem 2rem;
     font-size: 2rem;
@@ -10,47 +15,134 @@
 
 .gallery-content-container {
     display: grid;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-areas: 
-    'one two five six seven'
-    'three four five eight nine '
+    grid-template-rows: repeat(6, 30vh);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'one two'
+        'three four'
+        'five five'
+        'five five'
+        'six seven'
+        'eight nine '
     ;
     gap: 5px;
 }
+
 .grid1 {
     grid-area: one;
 }
+
 .grid2 {
     grid-area: two;
 }
+
 .grid3 {
     grid-area: three;
 }
+
 .grid4 {
     grid-area: four;
 }
+
 .grid5 {
     grid-area: five;
 }
+
 .grid6 {
     grid-area: six;
 }
+
 .grid7 {
     grid-area: seven;
 }
+
 .grid8 {
     grid-area: eight;
 }
+
 .grid9 {
     grid-area: nine;
 }
+
 .gallery-pic {
     width: 100%;
     height: 100%;
+    position: relative;
+    overflow: hidden;
+
 }
+
+/* .gallery-pic:hover .animaton-background {
+    transition: .4s linear;
+    transform: translateX(0);
+} */
+
+.animaton-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s linear;
+}
+
+
+.animaton-background i {
+    color: var(--white-smoke);
+    font-size: 2rem;
+}
+
 .gallery-pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.grid1>.animaton-background,
+.grid3>.animaton-background {
+    transform: translateX(-100%);
+}
+
+.grid1:hover>.animaton-background, 
+.grid3:hover>.animaton-background {
+    transition: .4s linear;
+    transform: translateX(0);
+}
+
+.grid7>.animaton-background,
+.grid9>.animaton-background {
+    transform: translateX(100%);
+}
+
+.grid7:hover>.animaton-background, 
+.grid9:hover>.animaton-background {
+    transition: .4s linear;
+    transform: translateX(0);
+}
+.grid4>.animaton-background,
+.grid8>.animaton-background {
+    transform: translateY(100%);
+}
+
+.grid4:hover>.animaton-background, 
+.grid8:hover>.animaton-background {
+    transition: .4s linear;
+    transform: translateY(0);
+}
+
+.grid2>.animaton-background,
+.grid5>.animaton-background,
+.grid6>.animaton-background {
+    transform: translateY(-100%);
+}
+
+.grid2:hover>.animaton-background, 
+.grid5:hover>.animaton-background,
+.grid6:hover>.animaton-background {
+    transition: .4s linear;
+    transform: translateY(0);
 }

@@ -42,6 +42,7 @@
     .header {
         padding: 0 1rem;
     }
+
     .banner h1 {
         font-size: 2.6rem;
     }
@@ -63,8 +64,20 @@
     .validation-text {
         height: 1.2rem;
     }
-  
-    
+
+    /* gallery section */
+
+    .gallery-content-container {
+        display: grid;
+        grid-template-rows: 30vh 30vh;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        grid-template-areas:
+            'one two five six seven'
+            'three four five eight nine'
+        ;
+        gap: 5px;
+    }
+
     /* footer  */
     .footer {
         padding-top: 3rem;
@@ -175,9 +188,11 @@
         border: none;
         height: 100%;
     }
+
     .logo img {
         height: 82%;
     }
+
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -328,11 +343,12 @@
         margin-bottom: 1rem;
     }
 
-     /* subscription */
-     .subscribe {
+    /* subscription */
+    .subscribe {
         padding: 1rem 0;
-     }
-     .subscribe-form {
+    }
+
+    .subscribe-form {
         width: 100%;
     }
 
@@ -354,6 +370,7 @@
         height: 100%;
         box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
     }
+
     .nav-item,
     .sublist-items {
         padding: 1rem;
@@ -378,7 +395,7 @@
         height: 26rem;
     }
 
-   
+
 }
 
 

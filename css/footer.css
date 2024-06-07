@@ -39,7 +39,10 @@
 .opening-hours strong {
     margin-right: .8rem;
 }
-
+.opening-content-wrapper {
+    display: flex;
+    
+}
 
 
 
@@ -126,7 +129,7 @@
 
 /* COOKIES ALERT SECTION */
 .cookies {
-    position: sticky;
+    position: fixed;
     background: var(--white-variant-2);
     left: 0;
     bottom: 0;
