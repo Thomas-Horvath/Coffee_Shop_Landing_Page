@@ -54,19 +54,19 @@ async function renderfavoriteCards() {
 
 
 
-
+const fetchUrl = 'https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite/blob/main/data/testimonials.json'
 
 // testimonal section
 
 //  fetch testimonals
 async function fetchTestimonials() {
     try {
-        const response = await fetch('https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite/blob/main/data/testimonials.json');
+        const response = await fetch(fetchUrl);
         const testimonials = await response.json();
         renderSlides(testimonials);
         startSlideShow(testimonials);
-    } catch (error) {
-        console.error("Error:", error);
+    } catch (err) {
+        console.error(err);
     };
 };
 
