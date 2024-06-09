@@ -61,7 +61,7 @@ async function renderfavoriteCards() {
 //  fetch testimonals
 async function fetchTestimonials() {
     try {
-        const response = await fetch('../data/testimonials.json');
+        const response = await fetch('https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite/blob/main/data/testimonials.json');
         const testimonials = await response.json();
         renderSlides(testimonials);
         startSlideShow(testimonials);
