@@ -54,7 +54,7 @@ async function renderfavoriteCards() {
 
 
 
-const fetchUrl = 'https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite/blob/main/data/testimonials.json'
+const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/testimonials.json'
 
 // testimonal section
 
