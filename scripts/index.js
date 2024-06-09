@@ -6,6 +6,7 @@ import { subscribeValidation } from './subscribeValidation.js';
 //  selected elements
 
 const favoriteContainer = document.querySelector('.favorite-cards');
+const slidesContainer = document.querySelector(".slide-container");
 
 
 
@@ -13,12 +14,6 @@ const favoriteContainer = document.querySelector('.favorite-cards');
 
 
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    cookiesPopup();
-});
-
-subscribeValidation();
 
 
 
@@ -58,69 +53,60 @@ async function renderfavoriteCards() {
 
 
 
+
+
+
+// testimonal section
+
+//  fetch testimonals
+async function fetchTestimonials() {
+    try {
+        const response = await fetch('../data/testimonials.json');
+        const testimonials = await response.json();
+        renderSlides(testimonials);
+        startSlideShow(testimonials);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+
+
+// render testimonal cards
+function renderSlides(testimonials) {
+    slidesContainer.innerHTML = testimonials.map((testimonial, index) => `
+        <div class="mySlides ${index === 0 ? 'active' : ''};">
+            <img src="${testimonial.pictureUrl}" class="customerPic">
+            <div class="text">
+                <i class="fa-solid fa-quote-right"></i>
+                <h3 class="customerName">${testimonial.name} <strong>(${testimonial.age})</strong></h3>
+                <p>${testimonial.text}</p>
+            </div>
+        </div>
+    `).join('');
+};
+
+
+function startSlideShow(testimonials) {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.mySlides');
+
+    slides[currentIndex].classList.add('active');
+    setInterval(() => {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        slides[currentIndex].classList.add('active');
+    }, 4000);
+};
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetchTestimonials()
+    cookiesPopup();
+});
+
+subscribeValidation();
 hamburgerMenu();
 renderfavoriteCards();
 
 
-
-// console.log(1)
-// fetch('http://dummyjson.com/users')
-// .then(res => res.json())
-// .then((data) => {console.log(data), console.log(2)});
-
-// console.log(3)
-
-
-// const response = await fetch('http://dummyjson.com/users');
-// const data = await response.json();
-// console.log(data);
-
-
-// console.log(document.querySelector('.checkbox').checked);
-// const subscribeForm = document.querySelector('.js-subscribe')
-// const validationText = document.querySelector('.js-validation-text');
-// const checkbox = document.querySelector('.js-checkbox')
-// const emailInput = document.querySelector('.js-input-email');
-// const nameInput = document.querySelector('.js-input-name');
-
-
-
-
-
-// subscribeForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     let isValid = true;
-    
-    
-
-//     console.log(nameInput)
-//     if (nameInput.value.trim() === '' ) {
-//         validationText.classList.add('red-color');
-//         validationText.innerHTML = ` ❌ A név megadása kötelező!`;
-//         isValid = false;
-//         return;
-//     };
-
-//     let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-//     if (!emailPattern.test(emailInput.value)) {
-//         validationText.innerHTML = ` ❌ Érvényes email címet kell megadni!`;
-//         isValid = false;
-//         return;
-//     };
-
-
-//     if (checkbox.checked && isValid === true) {
-//         validationText.classList.remove('red-color');
-//         validationText.innerHTML = `✅ Köszönjük a felíratkozást!`
-//         setTimeout(() => {
-//             subscribeForm.reset();
-//             validationText.innerHTML = "* A mezők kitöltése kötelező!";
-
-//         }, 2000)
-//     } else {
-//         validationText.innerHTML = ` ❌ Az adatakezelési tájékoztatót el kell fogadni!`
-//     }
-
-
-
-// })

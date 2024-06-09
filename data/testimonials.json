@@ -1,0 +1,44 @@
+[
+    {
+        "userId": 1,
+        "name": "Kovács Anna",
+        "age": 26,
+        "text": "A Thomas Coffee Corner hangulata egyszerűen varázslatos, és a kávéik mindig tökéletesek!",
+        "pictureUrl" : "./assets/testimonials_Img/customer1.jpg"
+    },
+    {
+        "userId": 2,
+        "name": "Tóth Péter",
+        "age": 31,
+        "text": "A legjobb hely Tata szívében, ahol mindig találok valami finom és különleges kávékülönlegességet.",
+        "pictureUrl" : "./assets/testimonials_Img/customer2.jpg"
+    },
+    {
+        "userId": 3,
+        "name": "Szabó Lilla",
+        "age": 24,
+        "text": "Mindig itt találkozom a barátaimmal, a Thomas Coffee Corner a legjobb hely a városban!",
+        "pictureUrl" : "./assets/testimonials_Img/customer3.jpg"
+    },
+    {
+        "userId": 4,
+        "name": "Nagy Dávid",
+        "age": 29,
+        "text": "Ez a hely a reggeli rituálém része lett, imádom a barátságos kiszolgálást és a kiváló kávét!s",
+        "pictureUrl" : "./assets/testimonials_Img/customer4.jpg"
+    },
+    {
+        "userId": 5,
+        "name": "Varga Eszter",
+        "age": 27,
+        "text": "Imádom, hogy itt mindig friss és helyi alapanyagokból készült süteményeket kínálnak a kávé mellé.",
+        "pictureUrl" : "./assets/testimonials_Img/customer5.jpg"
+    },
+    {
+        "userId": 6,
+        "name": "Farkas Gábor",
+        "age": 35,
+        "text": "A Thomas Coffee Corner barátságos légköre és profi személyzete miatt mindig szívesen térek vissza.",
+        "pictureUrl" : "./assets/testimonials_Img/customer6.jpg"
+    }
+]
