@@ -66,9 +66,9 @@ async function fetchTestimonials() {
         renderSlides(testimonials);
         startSlideShow(testimonials);
     } catch (error) {
-        console.error('Error:', error);
-    }
-}
+        console.error("Error:", error);
+    };
+};
 
 
 
