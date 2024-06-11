@@ -2,29 +2,125 @@
     padding-top: 4.5rem;
     margin-top: 10rem;
 }
-.booking-container {
-    min-height: 70vh;
 
+.booking-container {
+    min-height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/img/booking-BG.webp");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-  
-    padding-top: 5rem;
+    /* background-attachment: fixed; */
+    padding: 5rem 0;
     color: var(--white-smoke);
 }
+
 .booking h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
-   
+
     letter-spacing: .3rem;
 }
+
+
+
+
 
 .booking-form {
     max-width: 1400px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid var(--primary-color);
+    backdrop-filter: blur(20px);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input,
+select {
+    background: var(--white-smoke);
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-color);
+    padding: .8rem;
+    outline: none;
+    width: 100%;
+}
+
+
+
+
+.custome-select {
+    margin: 1rem;
+position: relative;
+}
+
+.custom-select-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--secondary-color);
+    background: #fff;
+    border: 2px solid var(--primary-color);
+
+    cursor: pointer;
+}
+
+.custom-options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    /* width: 280px; */
+    flex-direction: column;
+    overflow-y: auto;
+    border: 2px solid #ccc;
+    border-top: none;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+
+.custom-option {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.custom-option:hover,
+.custom-option.selected {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.custom-textarea {
+    resize: none;
+    width: 100%;
+}
+
+.custom-select-input, .custom-textarea,
+.custom-textarea::placeholder , .custom-select-input::placeholder {
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    line-height: 18px;
 }

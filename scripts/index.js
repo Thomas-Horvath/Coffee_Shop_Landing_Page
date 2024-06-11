@@ -104,6 +104,7 @@ function startSlideShow(testimonials) {
 document.addEventListener("DOMContentLoaded", () => {
     fetchTestimonials()
     cookiesPopup();
+    inputHandler();
 });
 
 subscribeValidation();
@@ -111,3 +112,60 @@ hamburgerMenu();
 renderfavoriteCards();
 
 
+
+
+const bookingBtn = document.querySelector('.js-booking-btn');
+
+bookingBtn.addEventListener("submit" , (e) => {
+    e.preventDefault();
+})
+
+
+
+
+ function inputHandler() {
+    const customSelectTriggers = document.querySelectorAll('.custom-select-trigger');
+
+    customSelectTriggers.forEach(trigger => {
+        const selectWrapper = trigger.closest('.custome-select');
+        const customOptions = selectWrapper.querySelector('.custom-options');
+
+        trigger.addEventListener('click', function () {
+            customOptions.classList.toggle('flex');
+        });
+
+        selectWrapper.addEventListener('click', function (e) {
+            const targetOption = e.target.closest('.custom-option');
+            if (targetOption) {
+                trigger.value = targetOption.textContent;
+                trigger.dataset.value = targetOption.dataset.value;
+                customOptions.classList.remove('flex');
+            }
+        });
+    });
+
+    document.addEventListener('click', function (e) {
+        customSelectTriggers.forEach(trigger => {
+            const selectWrapper = trigger.closest('.custome-select');
+            const customOptions = selectWrapper.querySelector('.custom-options');
+            if (!selectWrapper.contains(e.target)) {
+                customOptions.classList.remove('flex');
+            }
+        });
+    });
+};
+
+
+
+flatpickr("#datePicker", {
+    dateFormat: "Y.m.d",
+    inline: false, // Naptár folyamatosan látható
+    locale : "hu",
+    minDate: "today" ,
+    disable: [
+        function(date) {
+            // Visszatérünk true-val, ha a nap hétfő vagy kedd
+            return (date.getDay() === 1 || date.getDay() === 2); 
+        }
+    ]
+});

@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- FAVICON -->
-    <!-- <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon"> -->
     <link rel="shortcut icon" href="./assets/icons/favicon-logo.png" type="image/x-icon">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,6 +29,7 @@
     <link rel="stylesheet" href="./css/media-queries.css">
 
     <title>Thomas Coffee Corner - Minden ami kávé!</title>
+
 </head>
 
 <body>
@@ -182,29 +182,93 @@
         <section class="booking" id="booking">
             <div class="booking-container">
                 <h2>Foglaljon asztalt</h2>
-                <form action="#" class="booking-form">
-                    <label> Válaszzon dátumot
-                        <input type="date" name="date" autocomplete="off">
-                    </label>
+                <form action="#" class="booking-form" method="get">
+                    <div class="input-wrapper">
+                        <div class="input-left">
 
-                    <label> Válaszzon időpontot
-                        <input type="time" name="hour" autocomplete="off">
-                    </label>
 
-                    <label> Vendégek száma
-                        <input type="number" name="guests" min="1" max="10" autocomplete="off">
-                    </label>
-                    <label> Teljes név
-                        <input type="text" name="name" autocomplete="name">
-                    </label>
-                    <label> Telefonszám
-                        <input type="tel" name="phone" autocomplete="tel">
-                    </label>
-                    <label> Email cím
-                        <input type="email" name="email" autocomplete="email">
-                    </label>
 
-                    <button type="submit">Foglalás</button>
+                            <div class="custome-select">
+                                <input type="text" class=" custom-select-input " name="date" id="datePicker"
+                                    placeholder="Válasszon dátumot">
+                            </div>
+                            <div class="custome-select">
+                                <input type="text" class="custom-select-trigger custom-select-input " name="hour"
+                                    placeholder="Válasszon időpontot" autocomplete="off">
+                                <div class="custom-options">
+                                    <span class="custom-option" data-value="9:00">09:00</span>
+                                    <span class="custom-option" data-value="10:00">10:00</span>
+                                    <span class="custom-option" data-value="11:00">11:00</span>
+                                    <span class="custom-option" data-value="12:00">12:00</span>
+                                    <span class="custom-option" data-value="13:00">13:00</span>
+                                    <span class="custom-option" data-value="14:00">14:00</span>
+                                    <span class="custom-option" data-value="15:00">15:00</span>
+                                    <span class="custom-option" data-value="16:00">16:00</span>
+                                    <span class="custom-option" data-value="17:00">17:00</span>
+                                    <span class="custom-option" data-value="18:00">18:00</span>
+                                    <span class="custom-option" data-value="19:00">19:00</span>
+                                    <span class="custom-option" data-value="20:00">20:00</span>
+                                    <span class="custom-option" data-value="21:00">21:00</span>
+                                    <span class="custom-option" data-value="22:00">22:00</span>
+                                </div>
+                            </div>
+
+
+                            <div class="custome-select">
+                                <input type="text" class="custom-select-trigger custom-select-input " name="customer"
+                                    placeholder="Vendégek száma" autocomplete="off">
+                                <div class="custom-options">
+                                    <span class="custom-option" data-value="1">1</span>
+                                    <span class="custom-option" data-value="2">2</span>
+                                    <span class="custom-option" data-value="3">3</span>
+                                    <span class="custom-option" data-value="4">4</span>
+                                    <span class="custom-option" data-value="5">5</span>
+                                    <span class="custom-option" data-value="6">6</span>
+                                    <span class="custom-option" data-value="7">7</span>
+                                    <span class="custom-option" data-value="8">8</span>
+                                    <span class="custom-option" data-value="9">9</span>
+                                    <span class="custom-option" data-value="10">10</span>
+                                </div>
+                            </div>
+
+                            <div class="custome-select">
+                                <input type="text" class="custom-select-trigger custom-select-input " name="place"
+                                    placeholder="Válasszon helységet" autocomplete="off">
+                                <div class="custom-options">
+                                    <span class="custom-option" data-value="Terasz">Terasz</span>
+                                    <span class="custom-option" data-value="Belső helység">Belső helység</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="input-right">
+                            <div class="custome-select">
+                                <input type="text" class="custom-select-input" name="name" autocomplete="name"
+                                    placeholder="Teljes név">
+                            </div>
+
+                            <div class="custome-select">
+                                <input type="tel" class="custom-select-input" name="phone" autocomplete="tel"
+                                    placeholder="Telefonszám">
+                            </div>
+
+                            <div class="custome-select">
+                                <input type="email" class="custom-select-input" name="email" autocomplete="email"
+                                    placeholder="Email cím">
+                            </div>
+                        </div>
+                        <div class="custome-select">
+                            <textarea class="custom-select-input custom-textarea" name="message"
+                                placeholder="Megjegyzés" rows="10"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn js-booking-btn" type="submit">Foglalás</button>
+                    </div>
                 </form>
 
             </div>
@@ -215,7 +279,9 @@
         <section class="testimonial">
             <div class="testimonial-container">
                 <div class="testimonial-left">
-                    <h2>Vendégeink mondták</h2>
+                    <div class="left-wrapper">
+                        <h2>Vendégeink mondták</h2>
+                    </div>
                 </div>
                 <div class="testimonial-right">
 
@@ -242,7 +308,8 @@
                     </div>
                 </div>
                 <div class="events-container">
-                    <p class="events-text">Májustól októberig minden hétvéhgén pénteken és szombaton élőzenés rendezvényekkel várjuk kedves
+                    <p class="events-text">Májustól októberig minden hétvéhgén pénteken és szombaton élőzenés
+                        rendezvényekkel várjuk kedves
                         vendégeinket</p>
                     <h3>Közelgő rendezvények:</h3>
 
@@ -441,6 +508,10 @@
     </div>
 
     <script type="module" src="./scripts/index.js"></script>
+
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/hu.js"></script>
 </body>
 
 </html>

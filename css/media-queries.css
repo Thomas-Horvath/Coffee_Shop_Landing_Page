@@ -440,21 +440,23 @@
     .testimonial-container {
         flex-direction: row;
         align-items: center;
-        margin: 4rem 0;
+        margin: 10rem 0;
     }
 
     .testimonial-left {
         width: 50%;
         height: 300px;
-        justify-content: flex-start;
         align-items: center;
-
     }
 
     .testimonial-left h2 {
         font-size: 3.4rem;
         width: 330px;
-        margin-left: 5rem;
+    }
+    .left-wrapper {
+        width: 700px;
+        justify-content: flex-start;
+        padding-left: 2rem ;
     }
 
     .testimonial-right {

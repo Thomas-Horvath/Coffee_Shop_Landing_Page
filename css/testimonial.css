@@ -5,7 +5,7 @@
 .testimonial-container {
     display: flex;
     flex-direction: column;
-    margin: 4rem 0;
+    margin: 8rem 0;
 }
 
 .testimonial-left {
@@ -14,12 +14,17 @@
     background: var(--primary-color);
     display: flex;
     padding: 2rem 0;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
 }
-
+.left-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 .testimonial-left h2 {
-    font-size:3rem;
+    font-size: 3rem;
     letter-spacing: .2rem;
     width: 330px;
 }
