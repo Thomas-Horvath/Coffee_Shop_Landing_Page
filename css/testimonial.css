@@ -10,30 +10,30 @@
 
 .testimonial-left {
     width: 100%;
-    height: 40vh;
+    height: 230px;
     background: var(--primary-color);
     display: flex;
-    align-items: center;
+    padding: 2rem 0;
     justify-content: center;
-    /* padding-left: 4rem; */
     text-align: center;
 }
 
 .testimonial-left h2 {
-    font-size: 3rem;
-    /* width: 200px; */
+    font-size:3rem;
+    letter-spacing: .2rem;
+    width: 330px;
 }
 
 .testimonial-right {
     width: 90%;
     height: 200px;
-    /* margin: 2rem 0 2rem -15rem; */
     margin: -4rem auto 0;
     background: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .slide-container {
@@ -47,15 +47,7 @@
     border-radius: 50%;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
+
 
 .mySlides {
     display: none;
@@ -66,4 +58,14 @@
 
 .active {
     display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.text i {
+    color: var(--primary-color);
 }

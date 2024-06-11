@@ -132,6 +132,7 @@
     position: fixed;
     background: var(--white-variant-2);
     left: 0;
+    right: 0;
     bottom: 0;
     display: none;
     flex-wrap: wrap;

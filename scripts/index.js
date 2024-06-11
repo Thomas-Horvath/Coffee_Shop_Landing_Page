@@ -65,6 +65,7 @@ async function fetchTestimonials() {
         const testimonials = await response.json();
         renderSlides(testimonials);
         startSlideShow(testimonials);
+
     } catch (err) {
         console.error(err);
     };
@@ -76,7 +77,7 @@ async function fetchTestimonials() {
 function renderSlides(testimonials) {
     slidesContainer.innerHTML = testimonials.map((testimonial, index) => `
         <div class="mySlides ${index === 0 ? 'active' : ''};">
-            <img src="${testimonial.pictureUrl}" class="customerPic">
+            <img src="${testimonial.pictureUrl}" alt="vendéh profilkép" class="customerPic">
             <div class="text">
                 <i class="fa-solid fa-quote-right"></i>
                 <h3 class="customerName">${testimonial.name} <strong>(${testimonial.age})</strong></h3>
