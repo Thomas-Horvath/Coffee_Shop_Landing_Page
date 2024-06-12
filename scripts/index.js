@@ -122,15 +122,14 @@ function submitEventHandler() {
         } else {
             alertText.innerHTML = 'Foglalását rögzítettük!';
             setTimeout(() => {
+                alertText.innerHTML = 'A *-al jelölt mezőket kötelező kitölteni!';
                 bookingForm.reset();
-            }, 1000)
+            }, 2000)
         }
 
-        setTimeout(() => {
-            alertText.innerHTML = 'A *-al jelölt mezőket kötelező kitölteni!';
-        }, 2000)
+      
 
-        
+
         // elküldött adatok megjelenítése konzolon teszteléskénet
         const formData = new FormData(e.target);
         const formEntries = Object.fromEntries(formData.entries());
