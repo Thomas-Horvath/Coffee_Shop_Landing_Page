@@ -1,5 +1,5 @@
-const url = "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/products.json"
 
+const url = "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/products.json";
 
 export async function fetchProduct() {
     try {
@@ -8,7 +8,7 @@ export async function fetchProduct() {
         // console.log(data);
         return data;
     }
-    catch (err) {
+    catch(err) {
         console.error(err);
     }
 };

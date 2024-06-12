@@ -21,6 +21,7 @@ export function subscribeValidation() {
 
         let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (!emailPattern.test(emailInput.value)) {
+            validationText.classList.add('red-color');
             validationText.innerHTML = ` ❌ Érvényes email címet kell megadni!`;
             isValid = false;
             return;
@@ -37,6 +38,7 @@ export function subscribeValidation() {
 
             }, 2000)
         } else {
+            validationText.classList.add('red-color');
             validationText.innerHTML = ` ❌ Az adatakezelési tájékoztatót el kell fogadni!`
         };
 

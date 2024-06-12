@@ -64,8 +64,10 @@
     .validation-text {
         height: 1.2rem;
     }
-
-
+/* booking */
+.input-left {
+    grid-template-columns: 1fr 1fr;
+}
 
     /* testimonals */
     .mySlides {
@@ -399,6 +401,12 @@
     .button-section {
         flex-direction: row;
         gap: 3rem;
+    }
+
+    /* booking */
+    .booking-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
