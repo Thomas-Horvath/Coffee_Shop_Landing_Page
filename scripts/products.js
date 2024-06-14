@@ -1,8 +1,9 @@
 import { fetchProduct } from "./fetch.js";
 import { hamburgerMenu } from "./hamburger.js";
 import { cookiesPopup } from './cookies.js';
+import { showModal, closeModal, addEventListeners } from './modal.js';
 
-hamburgerMenu();
+
 const noResultsMessage = document.querySelector('.no-results-message');
 
 
@@ -141,8 +142,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-
-
+hamburgerMenu();
+addEventListeners();
 
 
 

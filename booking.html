@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/icons/favicon-logo.png" type="image/x-icon">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--  FLATPICKR CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+
+    <title>Thomas Coffee Corner - Minden ami kávé!</title>
+</head>
+
+<body>
+    <!-- ----- Global header ----- -->
+    <section class="global-header">
+        <div class="global-header-wrapper">
+            <p class="link-address"><i class="fa-solid fa-location-dot"></i> Tata, Szabadság tér 6.</p>
+            <ul class="global-header-right">
+                <li><a class="link-phone" href="#"><i class="fa-solid fa-phone"></i> +36 34 123-4567</a></li>
+                <li><a class="link-booking" href="./index.html#booking"><i class="fa-regular fa-pen-to-square"></i>
+                        Asztalfoglalás</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ----- Header ----- -->
+    <header class="header">
+        <div class="menu-wrapper">
+            <a class="logo" href="./index.html"><img src="./assets/img/logo.png" alt="Logo"></a>
+            <nav class="nav js-nav ">
+                <ul class="nav-list">
+                    <li><a class="nav-item js-menu-item" href="./index.html">Főoldal</a></li>
+                    <li><a class="nav-item js-menu-item" href="./about.html">Rólunk</a></li>
+                    <li class="dropdown">
+                        <div class="nav-item dropdown-btn js-dropdown-btn">Termékeink
+                            <i class="fa-solid fa-caret-down dropdown-arrow-icon"></i>
+                        </div>
+
+                        <ul class="products-sublist">
+                            <li><a class="sublist-items filter-btn js-menu-item" data-category="all"
+                                    href="./products.html?category=all">Összes</a></li>
+                            <li><a class="sublist-items filter-btn js-menu-item" data-category="kávé"
+                                    href="./products.html?category=kávé">Kávék</a></li>
+                            <li><a class="sublist-items filter-btn js-menu-item" data-category="süti"
+                                    href="./products.html?category=süti">Sütik</a></li>
+                            <li><a class="sublist-items filter-btn js-menu-item" data-category="üdítő"
+                                    href="./products.html?category=üdítő">Üdítők</a></li>
+                            <li><a class="sublist-items filter-btn js-menu-item" data-category="alkohol"
+                                    href="./products.html?category=alkohol">Alkoholok</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-item js-menu-item active-menu" href="./booking.html">Asztalfoglalás</a></li>
+                    <li><a class="nav-item js-menu-item" href="./contact.html">Kapcsolat</a></li>
+                </ul>
+                <form class="search" action="products.html" method="get">
+                    <input class="search-input" type="text" name="search" placeholder="Termék keresése..">
+                    <button class="search-submit-btn" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+
+            <div class="hamburger-btn js-hamburger-btn ">
+                <span class="line"></span>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- ----- Main Section ----- -->
+    <main>
+        <!-- booking section -->
+        <section class="booking" id="booking">
+            <div class="booking-container">
+                <h2>Foglaljon asztalt!</h2>
+                <div class="booking-content-container">
+                    <div class="booking-description">
+                        <div class="description-container">
+                            <h3 class="description-title">Kedves Vendégeink!</h3>
+                            <p class="description-p">Szeretnénk önöket tájékoztatni, hogy a Thomas Coffee Shop-ban
+                                asztalfoglalás maximum 10 fő részére lehetséges.</p>
+                            <p class="description-p">Kérjük, hogy foglalásukat az alábbi mezők kitöltésével küldjék el,
+                                és mi 24 órán belül e-mailben visszaigazoljuk azt. Ha 24 órán belüli foglalást
+                                szeretnének, kérjük, hívjanak minket telefonon a <a class="description-link"
+                                    href="tel:+36305536126">+36 30 553 6126</a> számon, hogy azonnal válaszolhassunk
+                                kérdésükre.</p>
+                            <h3 class="opening-title">Nyitva tartás:</h3>
+                            <p class="opening-hour-p">Hétfőn és kedden <strong>zárva</strong> vagyunk</p>
+                            <p class="opening-hour-p">Szerdán és csütörtökön: <strong>09.00-20.00</strong> óra között.
+                            </p>
+                            <p class="opening-hour-p">Péntektől vasárnapig: <strong>09.00-22.00</strong> óra között.</p>
+                            <p class="description-p">Kávéházi asztalfoglalást maximum 10 főig tudunk fogadni. 10 fő
+                                fölött kérjük, keresse rendezvényes kollégáinkat. Rendezvény ajánlatkérésért <a
+                                    class="description-link" href="./contact.html">kattintson ide!</a></p>
+                            <p class="description-p">Megértésüket köszönjük!</p>
+                            <p class="description-p">Köszönjük szépen és várjuk nagy szeretettel!</p>
+                            <p>A Thomas Coffee Shop csapata.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="booking-form-container">
+                        <form action="#" class="booking-form js-booking-form" method="post">
+                            <div class="input-wrapper">
+                                <div class="input-left">
+
+
+
+
+                                    <div class="custom-select ">
+                                        <label for="datePicker">Válasszon dátumot*</label>
+                                        <div class="input-arrow-wrapper">
+                                            <input type="text" class="custom-select-input js-required" name="date"
+                                                id="datePicker" placeholder="Válasszon dátumot" readonly>
+                                            <i class="fa-solid fa-caret-down arrow-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="custom-select ">
+                                        <label for="hour">Válasszon időpontot*</label>
+                                        <div class="input-arrow-wrapper">
+                                            <input type="text"
+                                                class="custom-select-trigger custom-select-input js-required"
+                                                name="hour" id="hour" placeholder="Válasszon időpontot"
+                                                autocomplete="off" readonly>
+                                            <i class="fa-solid fa-caret-down arrow-down"></i>
+                                        </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option" data-value="9:00">09:00</span>
+                                            <span class="custom-option" data-value="10:00">10:00</span>
+                                            <span class="custom-option" data-value="11:00">11:00</span>
+                                            <span class="custom-option" data-value="12:00">12:00</span>
+                                            <span class="custom-option" data-value="13:00">13:00</span>
+                                            <span class="custom-option" data-value="14:00">14:00</span>
+                                            <span class="custom-option" data-value="15:00">15:00</span>
+                                            <span class="custom-option" data-value="16:00">16:00</span>
+                                            <span class="custom-option" data-value="17:00">17:00</span>
+                                            <span class="custom-option" data-value="18:00">18:00</span>
+                                            <span class="custom-option" data-value="19:00">19:00</span>
+                                            <span class="custom-option" data-value="20:00">20:00</span>
+                                            <span class="custom-option" data-value="21:00">21:00</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="custom-select ">
+                                        <label for="customers">Vendégek száma*</label>
+                                        <div class="input-arrow-wrapper">
+                                            <input type="text"
+                                                class="custom-select-trigger custom-select-input js-required"
+                                                id="customers" name="customer" placeholder="Vendégek száma"
+                                                autocomplete="off" readonly>
+                                            <i class="fa-solid fa-caret-down arrow-down"></i>
+                                        </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option" data-value="1">1</span>
+                                            <span class="custom-option" data-value="2">2</span>
+                                            <span class="custom-option" data-value="3">3</span>
+                                            <span class="custom-option" data-value="4">4</span>
+                                            <span class="custom-option" data-value="5">5</span>
+                                            <span class="custom-option" data-value="6">6</span>
+                                            <span class="custom-option" data-value="7">7</span>
+                                            <span class="custom-option" data-value="8">8</span>
+                                            <span class="custom-option" data-value="9">9</span>
+                                            <span class="custom-option" data-value="10">10</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="custom-select ">
+                                        <label for="place">Válasszon helységet*</label>
+                                        <div class="input-arrow-wrapper">
+                                            <input type="text"
+                                                class="custom-select-trigger custom-select-input js-required" id="place"
+                                                name="place" placeholder="Válasszon helységet" autocomplete="off"
+                                                readonly>
+                                            <i class="fa-solid fa-caret-down arrow-down"></i>
+                                        </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option" data-value="Terasz">Terasz</span>
+                                            <span class="custom-option" data-value="Belső helység">Belső helység</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="input-right">
+                                    <div class="custom-select">
+                                        <label for="name">Teljes név*</label>
+                                        <input type="text" class="custom-select-input js-required" name="name" id="name"
+                                            autocomplete="name" placeholder="Teljes név">
+                                    </div>
+
+                                    <div class="custom-select">
+                                        <label for="phone">Telefonszám*</label>
+                                        <input type="tel" class="custom-select-input js-required" name="phone"
+                                            id="phone" placeholder="+36 00 123 4567">
+                                    </div>
+
+                                    <div class="custom-select">
+                                        <label for="email">Email cím*</label>
+                                        <input type="email" class="custom-select-input js-required" name="email"
+                                            id="email" autocomplete="email" placeholder="Email cím">
+                                    </div>
+                                </div>
+                                <div class="custom-select">
+                                    <label for="message">Megjegyzés</label>
+                                    <textarea class="custom-select-input custom-textarea" name="message" id="message"
+                                        placeholder="Megjegyzés" rows="10"></textarea>
+                                </div>
+                                <div class="alert-container">
+                                    <p class="alert-text"> A *-al jelölt mezőket kötelező kitölteni!</p>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <button class="btn js-booking-btn" type="submit">Foglalás</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="opening-hours content-items">
+                <h4 class="section-title">NYITVATARTÁS</h4>
+                <div class="opening-content-wrapper">
+                    <div>
+                        <p><strong>Hétfő:</strong></p>
+                        <p><strong>Kedd:</strong></p>
+                        <p><strong>Szerda:</strong></p>
+                        <p><strong>Csütörtök:</strong></p>
+                        <p><strong>Péntek:</strong></p>
+                        <p><strong>Szombat:</strong></p>
+                        <p><strong>Vasárnap:</strong></p>
+                    </div>
+                    <div>
+                        <p>Zárva</p>
+                        <p>Zárva</p>
+                        <p>09:00 - 20:00</p>
+                        <p>09:00 - 20:00</p>
+                        <p>09:00 - 22:00</p>
+                        <p>09:00 - 22:00</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-links content-items">
+                <h4 class="section-title">Linkek</h4>
+                <div class="footer-links-wrapper">
+                    <a href="#" class="footer-link" data-content="impresszum">Impresszum</a>
+                    <a href="#" class="footer-link" data-content="aszf">ÁSZF</a>
+                    <a href="#" class="footer-link" data-content="cookies">Cookies</a>
+                    <a href="#" class="footer-link" data-content="adatvedelem">Adatvédelmi irányelvek</a>
+                </div>
+            </div>
+
+            <div class="links content-items">
+                <h4 class="section-title">Social media</h4>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h4 class="section-title">Fizetési lehetőségek</h4>
+                <div class="payment-links">
+                    <img src="./assets/paymentIcons/mastercard.svg" alt="mastercard ikon">
+                    <img src="./assets/paymentIcons/visa.svg" alt="visa ikon">
+                    <img src="./assets/paymentIcons/paypal.svg" alt="paypal ikon">
+                    <img src="./assets/paymentIcons/apple-pay.svg" alt="apple-pay ikon">
+                    <img src="./assets/paymentIcons/amazon-pay.svg" alt="amazon-pay ikon">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2024 Minden jog fentartva! </p>
+        </div>
+
+    </footer>
+
+
+
+    
+    <div  class="modal js-modal">
+        <div class="modal-content">
+            <div class="icon-container">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <div class="text-container">
+                <div class="modal-text"></div>
+            </div>
+        </div>
+    </div>
+ 
+
+
+
+
+    
+    <div class="pageUpBtn js-pageUpBtn">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="cookies">
+        <p>Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk
+            használatával ön a tájékoztatásunkat tudomásul veszi.</p>
+        <a class="cookies-link" href="#">Adatkezelési tájékoztató</a>
+        <button class="btn cookies-btn">Elfogadom</button>
+    </div>
+
+    <script type="module" src="./scripts/booking.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/hu.js"></script>
+</body>
+
+</html>

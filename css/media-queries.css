@@ -64,10 +64,11 @@
     .validation-text {
         height: 1.2rem;
     }
-/* booking */
-.input-left {
-    grid-template-columns: 1fr 1fr;
-}
+
+    /* booking */
+    .input-left {
+        grid-template-columns: 1fr 1fr;
+    }
 
     /* testimonals */
     .mySlides {
@@ -83,15 +84,18 @@
     }
 
     /* events */
-    .event-content  h2 {
+    .event-content h2 {
         font-size: 3.2rem;
     }
+
     .events-container h3 {
-        font-size: 2rem ;
+        font-size: 2rem;
     }
+
     .events-text {
         font-size: 1.3rem;
     }
+
     .events-list li {
         font-size: 1.2rem;
     }
@@ -140,6 +144,11 @@
 
     .pageUpBtn {
         display: block;
+    }
+
+    /* contact */
+    .bottom-wrapper {
+        flex-direction: row;
     }
 }
 
@@ -408,6 +417,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /* contact */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'map form'
+            'wrapper wrapper'
+        ;
+    }
 }
 
 
@@ -461,10 +480,11 @@
         font-size: 3.4rem;
         width: 330px;
     }
+
     .left-wrapper {
         width: 700px;
         justify-content: flex-start;
-        padding-left: 2rem ;
+        padding-left: 2rem;
     }
 
     .testimonial-right {

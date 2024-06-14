@@ -2,6 +2,12 @@ import { hamburgerMenu } from './hamburger.js';
 import { fetchProduct } from './fetch.js';
 import { cookiesPopup } from './cookies.js';
 import { subscribeValidation } from './subscribeValidation.js';
+import { showModal, closeModal, addEventListeners } from './modal.js';
+
+
+
+
+
 
 
 
@@ -10,8 +16,6 @@ import { subscribeValidation } from './subscribeValidation.js';
 const favoriteContainer = document.querySelector('.favorite-cards');
 const slidesContainer = document.querySelector(".slide-container");
 const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/testimonials.json';
-const bookingForm = document.querySelector('.js-booking-form');
-const customSelectTriggers = document.querySelectorAll('.custom-select-trigger');
 
 
 
@@ -88,7 +92,7 @@ function renderSlides(testimonials) {
     `).join('');
 };
 
-
+// vélemény kártyák váltogatása 4
 function startSlideShow(testimonials) {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.mySlides');
@@ -101,103 +105,20 @@ function startSlideShow(testimonials) {
     }, 4000);
 };
 
-// booking section 
-const alertText = document.querySelector(".alert-text");
-// submit event handler
-function submitEventHandler() {
-    bookingForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const inputs = bookingForm.querySelectorAll('input[required]');
-        let isValid = true;
-
-        inputs.forEach(function (input) {
-            if (!input.value) {
-                isValid = false;
-            }
-        });
-
-        if (!isValid) {
-            alertText.innerHTML = 'Kérjük, töltse ki az összes kötelező mezőt!';
-        } else {
-            alertText.innerHTML = 'Foglalását rögzítettük!';
-            setTimeout(() => {
-                alertText.innerHTML = 'A *-al jelölt mezőket kötelező kitölteni!';
-                bookingForm.reset();
-            }, 2000)
-        }
-
-      
-
-
-        // elküldött adatok megjelenítése konzolon teszteléskénet
-        const formData = new FormData(e.target);
-        const formEntries = Object.fromEntries(formData.entries());
-        console.table(formEntries);
-
-    });
-};
-
-
-function inputHandler() {
-    customSelectTriggers.forEach(trigger => {
-        const selectWrapper = trigger.closest('.custom-select');
-        const customOptions = selectWrapper.querySelector('.custom-options');
-
-        trigger.addEventListener('click', function () {
-            customOptions.classList.toggle('flex');
-        });
-
-        selectWrapper.addEventListener('click', function (e) {
-            const targetOption = e.target.closest('.custom-option');
-            if (targetOption) {
-                trigger.value = targetOption.textContent;
-                trigger.dataset.value = targetOption.dataset.value;
-                customOptions.classList.remove('flex');
-            }
-        });
-    });
-
-    document.addEventListener('click', function (e) {
-        customSelectTriggers.forEach(trigger => {
-            const selectWrapper = trigger.closest('.custom-select');
-            const customOptions = selectWrapper.querySelector('.custom-options');
-            if (!selectWrapper.contains(e.target)) {
-                customOptions.classList.remove('flex');
-            }
-        });
-    });
-};
-
-
-// booking form , display calendar 
-flatpickr("#datePicker", {
-    dateFormat: "Y.m.d",
-    inline: false, // Naptár folyamatosan látható
-    locale: "hu",
-    minDate: "today",
-    disable: [
-        function (date) {
-            // Visszatérünk true-val, ha a nap hétfő vagy kedd(mert akkor zárva a shop)
-            return (date.getDay() === 1 || date.getDay() === 2);
-        }
-    ]
-});
 
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetchTestimonials()
-    cookiesPopup();
-    inputHandler();
-});
 
+
+
+
+fetchTestimonials()
+cookiesPopup();
 subscribeValidation();
 hamburgerMenu();
 renderfavoriteCards();
-submitEventHandler();
-
+addEventListeners();
 
 
 

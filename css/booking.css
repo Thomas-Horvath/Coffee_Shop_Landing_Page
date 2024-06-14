@@ -1,7 +1,4 @@
-.booking {
-    padding-top: 4.5rem;
-    margin-top: 10rem;
-}
+
 
 .booking-content-container {
     display: grid;
@@ -63,6 +60,7 @@
     margin-top: 1rem;
     color: var(--white-smoke);
 }
+
 .opening-hour-p {
     margin-bottom: 0;
 }
@@ -71,6 +69,7 @@
     color: var(--primary-color);
     font-weight: 600;
 }
+
 .booking-form {
     max-width: 600px;
     margin: auto;
@@ -81,7 +80,7 @@
 .btn-wrapper {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .input-wrapper {
@@ -133,7 +132,6 @@ label {
     font-size: 18px;
     color: var(--primary-color);
     pointer-events: none;
-    /* z-index: 11; */
 }
 
 .custom-options {
@@ -179,4 +177,28 @@ label {
     font-family: var(--primary-font-family);
     font-size: 16px;
     line-height: 18px;
+}
+
+
+
+.alert-container {
+    height: 3.6rem;
+}
+
+.alert-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.red-color {
+    color: #dc3545 ;
+}
+
+.green-color {
+    color: green;
+}
+
+.invalid-input {
+    border: 2px solid #dc3545 ;
 }

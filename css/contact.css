@@ -6,23 +6,22 @@
 }
 
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1f);
+    grid-template-areas:
+        'map'
+        'form'
+        'wrapper'
+    ;
 }
 
-.top-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 
-}
 
 .map-container {
+    grid-area: map;
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -35,32 +34,36 @@ iframe {
 }
 
 .contact-form-container {
+    grid-area: form;
     width: 100%;
     padding: 1rem;
-
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
+
 .contact-form label {
-  
     color: var(--secondary-color);
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
+    margin: .5rem 0;
 }
-.contact-form input,
+
+.message-input,
 textarea {
     width: 100%;
-    border: none;
+    border: 2px solid var(--primary-color);
     outline: none;
-    padding: .5rem;
+    padding: 10px;
     font-family: var(--primary-font-family);
     color: var(--secondary-color);
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -70,8 +73,9 @@ textarea {
 
 .contact-btn {
     width: fit-content;
-    background: transparent;
-    color: var(--secondary-color)
+    background: var(--primary-color);
+    color: var(--white-smoke);
+    cursor: pointer;
 }
 
 .contact-btn i {
@@ -85,6 +89,7 @@ textarea {
 
 
 .bottom-wrapper {
+    grid-area: wrapper;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -97,20 +102,60 @@ textarea {
     width: 100%;
     padding: 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: .5rem;
-    text-align: center;
+    gap: 1rem;
 }
 
 .address-container p {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .social-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.social-section i {
+    font-size: 2rem;
+}
+
+.social-section p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.alertBox {
+    height: 4rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.alert-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.red-color {
+    color: red;
+}
+
+.green-color {
+    color: green;
+}
+
+.invalid-input {
+    border: 2px solid red;
 }

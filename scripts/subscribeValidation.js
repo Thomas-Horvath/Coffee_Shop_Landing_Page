@@ -32,6 +32,16 @@ export function subscribeValidation() {
         if (checkbox.checked && isValid === true) {
             validationText.classList.remove('red-color');
             validationText.innerHTML = `✅ Köszönjük a felíratkozást!`
+
+
+            // elküldött adatok megjelenítése konzolon teszteléskénet
+            const formData = new FormData(e.target);
+            const formEntries = Object.fromEntries(formData.entries());
+            console.table(formEntries);
+
+
+
+
             setTimeout(() => {
                 subscribeForm.reset();
                 validationText.innerHTML = "* A mezők kitöltése kötelező!";

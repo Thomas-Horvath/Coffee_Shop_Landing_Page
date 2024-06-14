@@ -30,7 +30,7 @@
             <p class="link-address"><i class="fa-solid fa-location-dot"></i> Tata, Szabadság tér 6.</p>
             <ul class="global-header-right">
                 <li><a class="link-phone" href="#"><i class="fa-solid fa-phone"></i> +36 34 123-4567</a></li>
-                <li><a class="link-booking" href="./index.html#booking"><i class="fa-regular fa-pen-to-square"></i>
+                <li><a class="link-booking" href="./booking.html"><i class="fa-regular fa-pen-to-square"></i>
                         Asztalfoglalás</a></li>
             </ul>
         </div>
@@ -43,10 +43,10 @@
             <a class="logo" href="./index.html"><img src="./assets/img/logo.png" alt="Logo"></a>
             <nav class="nav js-nav ">
                 <ul class="nav-list">
-                    <li><a class="nav-item js-menu-item active-menu" href="./index.html">Főoldal</a></li>
+                    <li><a class="nav-item js-menu-item" href="./index.html">Főoldal</a></li>
                     <li><a class="nav-item js-menu-item" href="./about.html">Rólunk</a></li>
-                    <li class="dropdown">
-                        <div class="nav-item dropdown-btn js-dropdown-btn">Termékeink
+                    <li class="dropdown ">
+                        <div class="nav-item dropdown-btn js-dropdown-btn active-menu ">Termékeink
                             <i class="fa-solid fa-caret-down dropdown-arrow-icon"></i>
                         </div>
 
@@ -63,7 +63,7 @@
                                     href="./products.html?category=alkohol">Alkoholok</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-item js-menu-item" href="./index.html#events">Események</a></li>
+                    <li><a class="nav-item js-menu-item" href="./booking.html">Asztalfoglalás</a></li>
                     <li><a class="nav-item js-menu-item" href="./contact.html">Kapcsolat</a></li>
                 </ul>
                 <form class="search" action="products.html" method="get">
@@ -148,10 +148,10 @@
             <div class="footer-links content-items">
                 <h4 class="section-title">Linkek</h4>
                 <div class="footer-links-wrapper">
-                    <a href="">Adatvdelmi tájékoztató</a>
-                    <a href="">Impressum</a>
-                    <a href="">Cookiek kezelése</a>
-                    <a href="">ÁSZF</a>
+                    <a href="#" class="footer-link" data-content="impresszum">Impresszum</a>
+                    <a href="#" class="footer-link" data-content="aszf">ÁSZF</a>
+                    <a href="#" class="footer-link" data-content="cookies">Cookies</a>
+                    <a href="#" class="footer-link" data-content="adatvedelem">Adatvédelmi irányelvek</a>
                 </div>
             </div>
 
@@ -180,6 +180,22 @@
 
     </footer>
 
+
+    
+    <div  class="modal js-modal">
+        <div class="modal-content">
+            <div class="icon-container">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <div class="text-container">
+                <div class="modal-text"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
     <div class="pageUpBtn js-pageUpBtn">
         <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
