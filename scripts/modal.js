@@ -11,7 +11,7 @@ const content = {
         <p><strong>Email:</strong> info@pelda.hu</p>
         <p><strong>Telefon:</strong> +36 1 234 5678</p>
         <p>Az oldalon található tartalmak a Példa Kft. tulajdonát képezik, és azok felhasználása csak a cég írásos engedélyével lehetséges.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
     `,
     aszf: `
         <h2>Általános Szerződési Feltételek</h2>
@@ -23,7 +23,7 @@ const content = {
             <li><strong>Adatkezelés:</strong> Az adatokat bizalmasan kezeljük, és harmadik fél számára nem adjuk át.</li>
         </ul>
         <p>Részletesebb információkat az ÁSZF dokumentumban talál.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
     `,
     cookies: `
         <h2>Cookie-kra vonatkozó irányelvek</h2>
@@ -34,7 +34,7 @@ const content = {
             <li><strong>Marketing cookie-k:</strong> Ezeket a cookie-kat a hirdetések személyre szabására használjuk.</li>
         </ul>
         <p>Weboldalunk használatával hozzájárul a cookie-k használatához.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
     `,
     adatvedelem: `
         <h2>Adatvédelmi irányelvek</h2>
@@ -46,20 +46,20 @@ const content = {
             <li><strong>Adatbiztonság:</strong> Az adatokat biztonságos szervereken tároljuk, és megfelelő intézkedéseket teszünk azok védelmére.</li>
         </ul>
         <p>Az adatvédelmi irányelvekkel kapcsolatos kérdéseit az info@pelda.hu email címre küldheti el.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
     `
 };
 
 
 
 const modal = document.querySelector(".js-modal");
-
+const links = document.querySelectorAll(".footer-link")
+const modalText = document.querySelector(".modal-text");
 
 
 
 // Felugró ablak megjelenítése
 export function showModal(contentKey) {
-    const modalText = document.querySelector(".modal-text");
     modalText.innerHTML = content[contentKey];
     modal.style.display = "flex";
 }
@@ -74,8 +74,8 @@ export function closeModal() {
 // Eseménykezelők hozzáadása
 export function addEventListeners() {
     // Eseménykezelők hozzáadása a lábléc linkekhez
-    document.querySelectorAll(".footer-link").forEach(link => {
-        link.addEventListener("click", function(event) {
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
             event.preventDefault();
             const contentKey = this.getAttribute("data-content");
             showModal(contentKey);

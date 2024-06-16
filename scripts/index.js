@@ -2,7 +2,7 @@ import { hamburgerMenu } from './hamburger.js';
 import { fetchProduct } from './fetch.js';
 import { cookiesPopup } from './cookies.js';
 import { subscribeValidation } from './subscribeValidation.js';
-import { showModal, closeModal, addEventListeners } from './modal.js';
+import { addEventListeners } from './modal.js';
 
 
 
