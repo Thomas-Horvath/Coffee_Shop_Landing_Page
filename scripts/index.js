@@ -3,7 +3,7 @@ import { fetchProduct } from './fetch.js';
 import { cookiesPopup } from './cookies.js';
 import { subscribeValidation } from './subscribeValidation.js';
 import { addEventListeners } from './modal.js';
-
+import { createStars } from './products.js';
 
 
 
@@ -19,32 +19,33 @@ const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/
 
 
 
-
-
-
-
-
-// favorite cards create
-function renderMainProductsCards(productsToRender, container) {
-    const productCard = productsToRender.map((product, index) => `
+function mainProductsCardsTemplate(product, index) {
+    let starsHTML = createStars(product.rate)
+    return `
         <div class="favorite-card ${index === 1 ? 'big-card' : ''}">
             <img src="${product.imgUrl}" alt="${product.name}">
             <div class="content-wrapper">
                 <h3>${product.name}</h3>
                 <div class="rate-container">
                     <div class="rate-satrs">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+               ${starsHTML}
                     </div>
                     <p class="rate">${product.rate}</p>
                 </div>
                 <p class="price">Ár: ${product.price} Ft</p>
             </div>
         </div>  
-        `).join("");
+        `
+};
+
+
+
+
+// favorite cards create
+function renderMainProductsCards(productsToRender, container) {
+
+    const productCard = productsToRender.map((product, index) => 
+        mainProductsCardsTemplate(product, index)).join("");
     container.innerHTML = productCard;
 };
 

@@ -11,7 +11,7 @@
             "2 ek habtejszín"
         ],
         "price": 800,
-        "rate": 4.8,
+        "rate": 4.6,
         "calories": 224,
         "categoryName": "kávé",
         "imgUrl": "./assets/products_img/strawberry_coffee.jpg"
@@ -451,10 +451,9 @@
             "vanília"
         ],
         "price": 950,
-        "rate": 4.8,
+        "rate": 3.2,
         "calories": 327,
         "categoryName": "alkohol",
         "imgUrl": "./assets/products_img/baileys.jpg"
     }
-   
 ]
