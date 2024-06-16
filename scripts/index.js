@@ -3,7 +3,7 @@ import { fetchProduct } from './fetch.js';
 import { cookiesPopup } from './cookies.js';
 import { subscribeValidation } from './subscribeValidation.js';
 import { addEventListeners } from './modal.js';
-import { createStars } from './products.js';
+import createStars from "./creatStars.js";
 
 
 
@@ -28,7 +28,7 @@ function mainProductsCardsTemplate(product, index) {
                 <h3>${product.name}</h3>
                 <div class="rate-container">
                     <div class="rate-satrs">
-               ${starsHTML}
+                         ${starsHTML}
                     </div>
                     <p class="rate">${product.rate}</p>
                 </div>
@@ -44,7 +44,7 @@ function mainProductsCardsTemplate(product, index) {
 // favorite cards create
 function renderMainProductsCards(productsToRender, container) {
 
-    const productCard = productsToRender.map((product, index) => 
+    const productCard = productsToRender.map((product, index) =>
         mainProductsCardsTemplate(product, index)).join("");
     container.innerHTML = productCard;
 };
