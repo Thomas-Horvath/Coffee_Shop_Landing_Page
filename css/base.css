@@ -5,10 +5,7 @@
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-@font-face {
-    font-family: "Montserrat-italic";
-    src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
-}
+
 
 @font-face {
     font-family: "Diwani";

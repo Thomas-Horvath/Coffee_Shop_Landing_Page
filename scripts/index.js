@@ -6,16 +6,12 @@ import { addEventListeners } from './modal.js';
 import createStars from "./creatStars.js";
 
 
-
-
-
-
-
 //  selected elements
-
 const favoriteContainer = document.querySelector('.favorite-cards');
 const slidesContainer = document.querySelector(".slide-container");
 const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/testimonials.json';
+
+
 
 
 
@@ -40,10 +36,8 @@ function mainProductsCardsTemplate(product, index) {
 
 
 
-
 // favorite cards create
 function renderMainProductsCards(productsToRender, container) {
-
     const productCard = productsToRender.map((product, index) =>
         mainProductsCardsTemplate(product, index)).join("");
     container.innerHTML = productCard;
