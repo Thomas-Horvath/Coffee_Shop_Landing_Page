@@ -1,18 +1,10 @@
-import { fetchProduct } from "./fetch.js";
-import { hamburgerMenu } from "./hamburger.js";
-import { cookiesPopup } from './cookies.js';
-import { addEventListeners } from './modal.js';
-import createStars from "./creatStars.js";
+import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars } from "./functions.js";
 
 const noResultsMessage = document.querySelector('.no-results-message');
 
 
 
-
-
-
 function createProductsCardsTemplate(product) {
-    console.log(product)
     const starsHTML = createStars(product.rate);
     return `<div class="product-card">
         <img src="${product.imgUrl}" alt="${product.name}">

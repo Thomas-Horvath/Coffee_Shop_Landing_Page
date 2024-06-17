@@ -1,7 +1,4 @@
-import { hamburgerMenu } from './hamburger.js';
-import { cookiesPopup } from './cookies.js';
-import { subscribeValidation } from './subscribeValidation.js';
-import { addEventListeners } from './modal.js';
+import { hamburgerMenu , cookiesPopup , subscribeValidation , addEventListeners } from './functions.js';
 
 const messageForm = document.querySelector('.js-contact-form')
 const alertText = document.querySelector(".alert-text");
@@ -12,8 +9,6 @@ const messageInputs = document.querySelectorAll('.js-message-input')
 
 
 // message from
-
-
 function messageFormHandle() {
     messageForm.addEventListener('submit', (e) => {
         e.preventDefault();

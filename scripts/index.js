@@ -1,12 +1,6 @@
-import { hamburgerMenu } from './hamburger.js';
-import { fetchProduct } from './fetch.js';
-import { cookiesPopup } from './cookies.js';
-import { subscribeValidation } from './subscribeValidation.js';
-import { addEventListeners } from './modal.js';
-import createStars from "./creatStars.js";
+import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars , subscribeValidation } from './functions.js';
 
 
-//  selected elements
 const favoriteContainer = document.querySelector('.favorite-cards');
 const slidesContainer = document.querySelector(".slide-container");
 const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/testimonials.json';
@@ -87,7 +81,7 @@ function renderSlides(testimonials) {
     `).join('');
 };
 
-// vélemény kártyák váltogatása 4
+// vélemény kártyák váltogatása 
 function startSlideShow(testimonials) {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.mySlides');

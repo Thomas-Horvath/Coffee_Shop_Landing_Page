@@ -1,6 +1,4 @@
-import { hamburgerMenu } from './hamburger.js';
-import { cookiesPopup } from './cookies.js';
-import {  addEventListeners } from './modal.js';
+import { cookiesPopup , hamburgerMenu , addEventListeners } from './functions.js';
 
 
 const bookingForm = document.querySelector('.js-booking-form');
