@@ -1,4 +1,10 @@
 import { hamburgerMenu , cookiesPopup , subscribeValidation , addEventListeners , pageUpVisibilityHandle } from './functions.js';
+import '../css/base.css'
+import '../css/header.css'
+import '../css/subscribe.css'
+import '../css/footer.css'
+import '../css/contact.css'
+import '../css/media-queries.css'
 
 const messageForm = document.querySelector('.js-contact-form')
 const alertText = document.querySelector(".alert-text");

@@ -1,5 +1,16 @@
 import { fetchProduct, cookiesPopup, hamburgerMenu, addEventListeners, createStars, subscribeValidation, pageUpVisibilityHandle } from './functions.js';
-
+import '../css/base.css'
+import '../css/header.css'
+import '../css/banner.css'
+import '../css/welcome.css'
+import '../css/hero.css'
+import '../css/favorites.css'
+import '../css/events.css'
+import '../css/testimonial.css'
+import '../css/gallery.css'
+import '../css/subscribe.css'
+import '../css/footer.css'
+import '../css/media-queries.css'
 
 const favoriteContainer = document.querySelector('.favorite-cards');
 const slidesContainer = document.querySelector(".slide-container");

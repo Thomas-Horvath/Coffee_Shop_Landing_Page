@@ -1,4 +1,9 @@
 import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars , pageUpVisibilityHandle } from "./functions.js";
+import '../css/base.css'; 
+import '../css/header.css'; 
+import '../css/footer.css'; 
+import '../css/products.css';  
+import '../css/media-queries.css'; 
 
 const noResultsMessage = document.querySelector('.no-results-message');
 
