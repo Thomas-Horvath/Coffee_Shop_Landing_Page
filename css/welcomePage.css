@@ -1,19 +1,19 @@
-.historyPage {
+.welcome-page {
     padding: 2rem 2rem;
 }
 
-.brewingPage, .healtPage {
+.welcome-page {
     padding: 6rem 2rem;
 }
-.historyPage p{
+.welcome-page p {
     margin-bottom: 1rem;
 }
 
-.historyPage h2, h3 {
-    margin-bottom: 1rem;
+.welcome-page h2, h3 {
+    margin: 1rem 0;
 }
 
-.historyPage article {
+.welcome-page article {
     max-width: 1400px;
     margin: auto;
     min-height: 100vh;
