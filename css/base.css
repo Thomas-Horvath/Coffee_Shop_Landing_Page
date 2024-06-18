@@ -174,7 +174,7 @@ main {
     transform: scale(1.1);
 }
 .pageUpShow {
-    display: block;
+    display: none;
 }
 
 
