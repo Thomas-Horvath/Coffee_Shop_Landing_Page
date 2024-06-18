@@ -85,6 +85,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+.social-links a {
+    color: var(--white-smoke);
+}
 
 .social-links i:hover {
     color: var(--white-variant-2);
