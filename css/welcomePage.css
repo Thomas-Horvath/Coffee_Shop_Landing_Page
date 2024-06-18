@@ -1,8 +1,8 @@
-.welcome-page {
-    padding: 2rem 2rem;
-}
 
 .welcome-page {
+    padding: 6rem 2rem;
+}
+.welcome-page.historyPage {
     padding: 2rem 2rem 6rem 2rem;
 }
 .welcome-page p {
