@@ -125,7 +125,7 @@
 
     .footer-container {
         justify-content: center;
-        gap: 0;
+        gap: 1rem;
         padding: 2rem;
     }
 
