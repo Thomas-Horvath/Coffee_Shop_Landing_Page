@@ -1,4 +1,4 @@
-import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars , subscribeValidation } from './functions.js';
+import { fetchProduct, cookiesPopup, hamburgerMenu, addEventListeners, createStars, subscribeValidation, pageUpVisibilityHandle } from './functions.js';
 
 
 const favoriteContainer = document.querySelector('.favorite-cards');
@@ -8,7 +8,7 @@ const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/
 
 
 
-
+// kártyák mintájának létrehozása
 function mainProductsCardsTemplate(product, index) {
     let starsHTML = createStars(product.rate)
     return `
@@ -101,7 +101,7 @@ function startSlideShow(testimonials) {
 
 
 
-
+pageUpVisibilityHandle();
 fetchTestimonials()
 cookiesPopup();
 subscribeValidation();

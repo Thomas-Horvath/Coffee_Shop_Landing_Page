@@ -167,7 +167,6 @@
     color: var(--black-variant-1);
     cursor: pointer;
     height: 3rem;
-
 }
 
 
@@ -220,3 +219,7 @@
     color: var(--black-variant-1);
     cursor: pointer;
 }
+.open-modal {
+    display: flex;
+} 
+

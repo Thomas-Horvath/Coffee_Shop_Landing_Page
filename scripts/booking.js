@@ -1,4 +1,4 @@
-import { cookiesPopup , hamburgerMenu , addEventListeners } from './functions.js';
+import { cookiesPopup , hamburgerMenu , addEventListeners ,pageUpVisibilityHandle } from './functions.js';
 
 
 const bookingForm = document.querySelector('.js-booking-form');
@@ -103,7 +103,7 @@ function inputHandler() {
 
 
 
-// booking form , display calendar 
+// naptár megjelenítése
 flatpickr("#datePicker", {
     dateFormat: "Y.m.d",
     inline: false, // Naptár folyamatosan látható
@@ -123,7 +123,7 @@ flatpickr("#datePicker", {
 
 
 
-
+pageUpVisibilityHandle();
 cookiesPopup();
 inputHandler();
 hamburgerMenu();

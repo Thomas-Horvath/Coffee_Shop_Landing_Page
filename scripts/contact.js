@@ -1,4 +1,4 @@
-import { hamburgerMenu , cookiesPopup , subscribeValidation , addEventListeners } from './functions.js';
+import { hamburgerMenu , cookiesPopup , subscribeValidation , addEventListeners , pageUpVisibilityHandle } from './functions.js';
 
 const messageForm = document.querySelector('.js-contact-form')
 const alertText = document.querySelector(".alert-text");
@@ -44,7 +44,7 @@ function messageFormHandle() {
 
 
 
-
+pageUpVisibilityHandle();
 hamburgerMenu();
 subscribeValidation();
 cookiesPopup();

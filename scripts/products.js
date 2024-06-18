@@ -1,4 +1,4 @@
-import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars } from "./functions.js";
+import { fetchProduct , cookiesPopup ,hamburgerMenu , addEventListeners , createStars , pageUpVisibilityHandle } from "./functions.js";
 
 const noResultsMessage = document.querySelector('.no-results-message');
 
@@ -118,8 +118,6 @@ function setupSearchListener(products, container) {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    cookiesPopup();
-
     const productContainer = document.querySelector(".js-products-container");
     if (productContainer) { //megvizsgáljuk létezik e a konténer
 
@@ -141,8 +139,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 });
 
-
-
+ cookiesPopup();
+pageUpVisibilityHandle();
 hamburgerMenu();
 addEventListeners();
 

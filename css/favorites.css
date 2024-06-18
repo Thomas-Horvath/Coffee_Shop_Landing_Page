@@ -1,18 +1,15 @@
 .favorite-cards {
     display: flex;
     flex-direction: column;
-    /*!*/
     gap: 2rem;
     justify-content: center;
     align-items: center;
     margin: 8rem auto;
     max-width: 1400px;
-
 }
 
 .content-wrapper {
     width: 80%;
-
 }
 
 .favorite-card {
@@ -33,7 +30,6 @@
     height: 21rem;
     transition: all 0.4s ease;
     opacity: .9;
-
 }
 
 .favorite-card:hover img {

@@ -5,15 +5,15 @@
 .brewingPage, .healtPage {
     padding: 6rem 2rem;
 }
-p{
+.historyPage p{
     margin-bottom: 1rem;
 }
 
-h2, h3 {
+.historyPage h2, h3 {
     margin-bottom: 1rem;
 }
 
-article {
+.historyPage article {
     max-width: 1400px;
     margin: auto;
     min-height: 100vh;

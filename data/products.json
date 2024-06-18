@@ -268,23 +268,6 @@
         "imgUrl": "./assets/products_img/muffin.jpg"
     },
     {
-        "id": 29,
-        "name": "Baileys",
-        "description": "A Baileys egy ír krémlikőr, amely whisky és tejszín kombinációjával készül. Édes és krémes íze miatt desszertként vagy kávé mellé is fogyasztható.",
-        "ingredients": [
-            "whisky",
-            "tejszín",
-            "cukor",
-            "kakaó",
-            "vanília"
-        ],
-        "price": 950,
-        "rate": 4.8,
-        "calories": 327,
-        "categoryName": "süti",
-        "imgUrl": "./assets/products_img/cookies1.jpg"
-    },
-    {
         "id": 18,
         "name": "Coca Cola",
         "description": "A Coca Cola egy népszerű szénsavas üdítőital, amelyet kóla ízével és cukortartalmával ismernek. Frissítő választás bármely napszakban.",
@@ -455,5 +438,56 @@
         "calories": 327,
         "categoryName": "alkohol",
         "imgUrl": "./assets/products_img/baileys.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Pizzás batyu",
+        "description": "Egy ízletes, pizza ízű töltelékkel töltött tészta batyu. Ideális uzsonnára vagy könnyű vacsorára.",
+        "ingredients": [
+            "liszt",
+            "élesztő",
+            "paradicsomszósz",
+            "sajt",
+            "sonka"
+        ],
+        "price": 600,
+        "rate": 4.8,
+        "calories": 350,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/pizzas_batyu.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Képviselő fánk",
+        "description": "Egy klasszikus magyar desszert, puha fánk tészta édes vaníliás krémmel töltve és porcukorral meghintve.",
+        "ingredients": [
+            "liszt",
+            "tojás",
+            "cukor",
+            "vaníliás krém",
+            "porcukor"
+        ],
+        "price": 400,
+        "rate": 4.2,
+        "calories": 290,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/kepviselo_fank.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Kakaós Csiga",
+        "description": "Kakaós töltelékkel tekert, édes tészta, mely tökéletes reggelire vagy uzsonnára.",
+        "ingredients": [
+            "liszt",
+            "cukor",
+            "kakaópor",
+            "vaj",
+            "tej"
+        ],
+        "price": 350,
+        "rate": 4.5,
+        "calories": 310,
+        "categoryName": "süti",
+        "imgUrl": "./assets/products_img/kakaos_csiga.jpg"
     }
 ]

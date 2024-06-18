@@ -1,8 +1,9 @@
 
-import { cookiesPopup ,hamburgerMenu , addEventListeners } from './functions.js';
+import { cookiesPopup ,hamburgerMenu , addEventListeners , pageUpVisibilityHandle } from './functions.js';
+  
 
 
-    
+pageUpVisibilityHandle();
 cookiesPopup();
 hamburgerMenu();
 addEventListeners();

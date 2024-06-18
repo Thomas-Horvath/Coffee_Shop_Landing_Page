@@ -21,7 +21,12 @@
     gap: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
+.welcome-card:hover .welcome-btn {
+    background: var(--primary-color-variant-2);
+}
+.welcome-card:hover .welcome-btn i {
+    transform: translateX(5px);
+}
 .icon {
     font-size: 3rem;
 }
@@ -29,10 +34,17 @@
 
 .welcome-card h3 {
     font-size: 1.6rem;
-
     margin-bottom: 1rem;
 }
-
+.welcome-btn {
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+    padding: .5rem 1rem;
+}
+.welcome-btn i {
+    margin-left: .5rem;
+    transition: transform .3s ease;
+}
 .history {
     background: var(--third-color);
     color: var(--black-variant-1);

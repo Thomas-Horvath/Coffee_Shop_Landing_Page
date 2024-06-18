@@ -28,6 +28,21 @@
     color: var(--primary-color);
     font-size: 4.5rem;
     text-shadow: 3px 3px 2px var(--white-smoke);
+    position: relative;
+    animation: animationTop .5s ease-in-out;
+}
+
+
+@keyframes animationTop {
+    from {
+        top: -200px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 .banner p {
