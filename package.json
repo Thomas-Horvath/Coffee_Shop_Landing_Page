@@ -5,7 +5,9 @@
   "main": "webpack.config.js",
   "homepage": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
