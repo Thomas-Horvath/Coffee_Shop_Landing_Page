@@ -15,7 +15,7 @@ const checkbox = document.querySelector('.js-checkbox')
 const emailInput = document.querySelector('.js-input-email');
 const nameInput = document.querySelector('.js-input-name');
 const pageUp = document.querySelector('.js-pageUpBtn');
-
+const loading = document.getElementById('loading');
 
 
 
@@ -62,12 +62,29 @@ export function hamburgerMenu() {
     });
 
     menuItems.forEach((menuItem) => {
-        menuItem.addEventListener("click", () => {
+        menuItem.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const targetUrl = e.currentTarget.getAttribute('href');
+            console.log(targetUrl)
+
+            
             nav.classList.remove("nav-active");
             hamburgerBtn.classList.remove("active-hamburger");
-        })
+
+
+
+            setTimeout(() => {
+                window.location.href = targetUrl;
+                loading.classList.remove('hidden');
+            }, 350);
+        });
     });
 };
+
+
+
+
 
 
 
@@ -83,11 +100,13 @@ export function hamburgerMenu() {
 export function showModal(contentKey) {
     modalText.innerHTML = content[contentKey];
     modal.classList.add('open-modal');
+    document.body.classList.add('no-scroll');
 }
 
 // Felugró ablak bezárása
 export function closeModal() {
     modal.classList.remove('open-modal');
+    document.body.classList.remove('no-scroll');
 }
 
 // Eseménykezelők hozzáadása
@@ -108,6 +127,7 @@ export function addEventListeners() {
     window.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.classList.remove('open-modal');
+            document.body.classList.remove('no-scroll');
         }
     });
 };
@@ -118,10 +138,10 @@ export function addEventListeners() {
 // csillagok generálása a product kártyákon
 export function createStars(productRating) {
     // Megkapjuk a reating egész értékét.  Ennyi teljes csillagot biztos meg kell jeleníteni.
-    let rating = Math.floor(productRating); 
+    let rating = Math.floor(productRating);
 
     // Megkapjuk a rating tizedees értékét. 
-    let rest = Math.round((productRating - rating) * 10); 
+    let rest = Math.round((productRating - rating) * 10);
 
     let starsHTML = '';
     for (let i = 0; i < 5; i++) {

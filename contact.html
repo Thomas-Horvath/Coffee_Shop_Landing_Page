@@ -15,11 +15,15 @@
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/contact.bundle.css">
- 
+
     <title>Thomas Coffee Corner - Minden ami kávé!</title>
 </head>
 
 <body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+    </div>
+
     <!-- ----- Global header ----- -->
     <section class="global-header">
         <div class="global-header-wrapper">
@@ -84,21 +88,23 @@
 
         <section class="contact-container">
             <div class="map-container">
-                <iframe 
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6392.716785128452!2d18.31924963279107!3d47.64933269283406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476a45e43978db33%3A0x27aa4c73938f30db!2sTatai%20v%C3%A1r!5e0!3m2!1shu!2shu!4v1716892799461!5m2!1shu!2shu"
-                     loading="eager"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe> 
+                    loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
 
             <div class="contact-form-container">
                 <form action="#" class="contact-form js-contact-form" method="get">
                     <label for="fullname">Teljes név</label>
-                    <input class="message-input js-message-input" type="text" name="fullname" id="fullname" placeholder="Név">
+                    <input class="message-input js-message-input" type="text" name="fullname" id="fullname"
+                        placeholder="Név">
                     <label for="email">Email cím </label>
-                    <input class="message-input js-message-input" type="email" name="email" id="email" placeholder="Email cím">
+                    <input class="message-input js-message-input" type="email" name="email" id="email"
+                        placeholder="Email cím">
                     <label for="message">Üzenet</label>
-                    <textarea class="message-input js-message-input" name="message" id="message" rows="10" cols="50" placeholder="Üzenet"></textarea>
+                    <textarea class="message-input js-message-input" name="message" id="message" rows="10" cols="50"
+                        placeholder="Üzenet"></textarea>
                     <div class="alertBox">
                         <p class="alert-text">A mezők kitöltése kötelező!</p>
                     </div>
@@ -126,7 +132,7 @@
                         <p>Facebook</p>
                     </a>
                     <a href="https://www.instagram.com/" class="social-section" target="_blank">
-                        <i class="fa-brands fa-instagram" ></i>
+                        <i class="fa-brands fa-instagram"></i>
                         <p>Instagram</p>
                     </a>
                     <a href="https://x.com/" class="social-section" target="_blank">
@@ -236,8 +242,8 @@
 
 
 
-    
-    <div  class="modal js-modal">
+
+    <div class="modal js-modal">
         <div class="modal-content">
             <div class="icon-container">
                 <i class="fa-solid fa-x close"></i>
@@ -256,7 +262,7 @@
     <div class="cookies">
         <p>Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk
             használatával ön a tájékoztatásunkat tudomásul veszi.</p>
-            <a class="cookies-link footer-link" href="#" data-content="adatvedelem">Adatkezelési tájékoztató</a>
+        <a class="cookies-link footer-link" href="#" data-content="adatvedelem">Adatkezelési tájékoztató</a>
         <button class="btn cookies-btn">Elfogadom</button>
     </div>
 
