@@ -64,6 +64,7 @@ body {
     background: var(--white-smoke);
     font-family: var(--primary-font-family);
     position: relative;
+    scroll-behavior: smooth;
 }
 
 a {
