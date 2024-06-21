@@ -5,7 +5,7 @@ const cookies = document.querySelector('.cookies');
 const cookiesBtn = document.querySelector('.cookies-btn');
 const hamburgerBtn = document.querySelector('.js-hamburger-btn');
 const nav = document.querySelector(".js-nav");
-const menuItems = document.querySelectorAll('.js-menu-item');
+const menuItems = document.querySelectorAll('.js-menu-item, .welcome-card');
 const modal = document.querySelector(".js-modal");
 const links = document.querySelectorAll(".footer-link")
 const modalText = document.querySelector(".modal-text");
@@ -59,6 +59,9 @@ export function hamburgerMenu() {
     hamburgerBtn.addEventListener('click', () => {
         nav.classList.toggle("nav-active");
         hamburgerBtn.classList.toggle("active-hamburger");
+        document.body.classList.toggle('no-scroll');
+
+      
     });
 
     menuItems.forEach((menuItem) => {
@@ -66,22 +69,24 @@ export function hamburgerMenu() {
             e.preventDefault();
 
             const targetUrl = e.currentTarget.getAttribute('href');
-            console.log(targetUrl)
 
-            
+
             nav.classList.remove("nav-active");
             hamburgerBtn.classList.remove("active-hamburger");
+            document.body.classList.remove('no-scroll');
 
-
+            document.body.classList.add('fade-out');
 
             setTimeout(() => {
                 window.location.href = targetUrl;
                 loading.classList.remove('hidden');
+
             }, 350);
         });
     });
-};
 
+
+};
 
 
 

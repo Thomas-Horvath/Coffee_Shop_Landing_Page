@@ -226,6 +226,3 @@
     display: flex;
 } 
 
-body.no-scroll {
-    overflow: hidden;
-}

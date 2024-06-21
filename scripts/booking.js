@@ -1,34 +1,31 @@
-import { cookiesPopup , hamburgerMenu , addEventListeners ,pageUpVisibilityHandle } from './functions.js';
+import { cookiesPopup, hamburgerMenu, addEventListeners, pageUpVisibilityHandle } from './functions.js';
 
 
 const bookingForm = document.querySelector('.js-booking-form');
 const customSelectTriggers = document.querySelectorAll('.custom-select-trigger');
 const alertText = document.querySelector(".alert-text");
 const phoneInput = document.getElementById('phone');
+const formContainer = document.querySelector('.booking-content-container');
+const container = document.querySelector('.succesfull-booking');
 
 
 window.addEventListener('load', async function () {
     const loading = document.getElementById('loading');
 
-  
-    // Megvárjuk, amíg az oldal teljesen betöltődik
-    await new Promise(resolve => setTimeout(resolve, 300)); // 0.3 másodperc várakozás
+    await new Promise(resolve => setTimeout(resolve, 300));
 
-    // Az oldal betöltése után elrejtjük a loading spinntert animációval
     if (loading) {
-        loading.style.transition = 'opacity 0.5s ease-out'; // Animációs transition hozzáadása
-        loading.style.opacity = '0'; // Opacitás csökkentése
-
-        // Elrejtés végrehajtása a transition végén
+        loading.classList.add('loading-fade-out');
         setTimeout(() => {
-            loading.classList.add('hidden'); // Elrejtjük a loading spinntert
-            loading.style.opacity = ''; // Visszaállítjuk az opacitást
-        }, 500); // 0.5 másodperc után, hogy a transition befejeződjön
-    }
+            loading.classList.add('hidden');
+            loading.classList.remove('loading-fade-out');
+        }, 500);
+        document.body.classList.remove('fade-out');
+    };
 
-    // Hamburger menü inicializálása
     hamburgerMenu();
 });
+
 
 
 
@@ -62,7 +59,7 @@ function submitEventHandler() {
             }
         });
 
-        if (!isValid ) {
+        if (!isValid) {
             alertText.innerHTML = 'Kérjük, töltse ki az összes kötelező mezőt!';
             alertText.classList.add('red-color');
         } else if (validatePhoneNumber()) {
@@ -70,8 +67,13 @@ function submitEventHandler() {
             alertText.textContent = 'A telefonszám formátuma nem megfelelő!';
             alertText.classList.add('red-color');
         } else {
-            alertText.innerHTML = 'Foglalását rögzítettük!';
-            alertText.classList.add('green-color');
+            container.innerHTML = `<h2>Foglalását rögzítettük!</h2><p>A visszaigazolást hamarosan elküldjük a megadott email címre!</p><p>Várjuk szeretettel!</p>`;
+            container.classList.add('d-flex');
+            formContainer.classList.add('d-none');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
 
 
             // elküldött adatok megjelenítése konzolon teszteléskénet
@@ -80,10 +82,8 @@ function submitEventHandler() {
             console.table(formEntries);
 
             setTimeout(() => {
-                alertText.innerHTML = 'A *-al jelölt mezőket kötelező kitölteni!';
-                alertText.classList.remove('green-color');
-                bookingForm.reset();
-            }, 3000)
+                window.location.href = './index.html'; // átnavigálunk a főoldalra
+            }, 5000)
         }
 
     });
