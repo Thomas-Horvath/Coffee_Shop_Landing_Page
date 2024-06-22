@@ -7,16 +7,33 @@ const alertText = document.querySelector(".alert-text");
 const phoneInput = document.getElementById('phone');
 const formContainer = document.querySelector('.booking-content-container');
 const container = document.querySelector('.succesfull-booking');
+const globalHeader = document.querySelector('.global-header');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const footer = document.querySelector('.footer');
+
 
 
 window.addEventListener('load', async function () {
     const loading = document.getElementById('loading');
 
+
     await new Promise(resolve => setTimeout(resolve, 300));
+
 
     if (loading) {
         loading.classList.add('loading-fade-out');
+        globalHeader.classList.remove('hidden');
+        header.classList.remove('hidden');
+        main.classList.remove('hidden');
+        footer.classList.remove('hidden');
+
+
         setTimeout(() => {
+            globalHeader.classList.remove('hidden');
+            header.classList.remove('hidden');
+            main.classList.remove('hidden');
+            footer.classList.remove('hidden');
             loading.classList.add('hidden');
             loading.classList.remove('loading-fade-out');
         }, 500);

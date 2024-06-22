@@ -15,19 +15,34 @@ import '../css/media-queries.css'
 const favoriteContainer = document.querySelector('.favorite-cards');
 const slidesContainer = document.querySelector(".slide-container");
 const fetchUrl = 'https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/data/testimonials.json';
-
-
+const globalHeader = document.querySelector('.global-header');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const footer = document.querySelector('.footer');
 
 
 
 window.addEventListener('load', async function () {
     const loading = document.getElementById('loading');
 
+
     await new Promise(resolve => setTimeout(resolve, 300));
+
 
     if (loading) {
         loading.classList.add('loading-fade-out');
+
+            globalHeader.classList.remove('hidden');
+            header.classList.remove('hidden');
+            main.classList.remove('hidden');
+            footer.classList.remove('hidden');
+
+
         setTimeout(() => {
+            globalHeader.classList.remove('hidden');
+            header.classList.remove('hidden');
+            main.classList.remove('hidden');
+            footer.classList.remove('hidden');
             loading.classList.add('hidden');
             loading.classList.remove('loading-fade-out');
         }, 500);
@@ -36,6 +51,7 @@ window.addEventListener('load', async function () {
 
     hamburgerMenu();
 });
+
 
 
 // kártyák mintájának létrehozása

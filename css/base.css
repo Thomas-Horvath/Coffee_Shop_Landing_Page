@@ -61,6 +61,8 @@ html {
 
 body {
     min-width: 350px;
+    width: 100%;
+    min-height: 100vh;
     background: var(--white-smoke);
     font-family: var(--primary-font-family);
     position: relative;
@@ -251,7 +253,7 @@ body.no-scroll {
 }
 
 .loading-fade-out {
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.3s ease-out;
     opacity: 0;
 }
 
@@ -261,7 +263,7 @@ body.no-scroll {
 }
 
 .fade-out {
-    transition: opacity 1.5s ease;
+    transition: opacity 1s ease;
     opacity: 0;
     pointer-events: none; /* A felhasználói interakció kikapcsolása a fokozatos elhalványítás alatt */
 }
